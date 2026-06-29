@@ -1,0 +1,32 @@
+t = int(input())
+for some in range(t):
+    n = int(input())
+    given = list(map(int,input().split()))
+    req = list(map(int,input().split()))
+    plus = 0
+    minus = -1
+    req2 = 0
+    possible = False
+    for c in range(n):
+        if req[c]>given[c]:
+            plus = req[c]-given[c]
+            req2+=1
+        elif given[c]-req[c]<minus or minus==-1:
+            minus = given[c]-req[c]
+           # print("moremin",c)
+        if req2==2:
+            break
+    
+    if n==1 and req[0]<= given[0]:
+        print("YES")
+    elif n==1:
+        print("NO")
+    elif req2==2:
+        
+        #print("tOo")
+        print("NO")
+    elif minus>=plus:
+        print("YES")
+    else:
+        print("NO")
+    #print(plus,minus,n) 
