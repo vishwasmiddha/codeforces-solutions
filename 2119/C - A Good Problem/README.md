@@ -1,0 +1,26 @@
+<h2><a href="https://codeforces.com/contest/2119/problem/C" target="_blank" rel="noopener noreferrer">2119C — A Good Problem</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1300 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2119C](https://codeforces.com/contest/2119/problem/C) |
+
+## Topics
+`bitmasks` `constructive algorithms` `math`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">C. A Good Problem</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p> </p><div class="epigraph"><div class="epigraph-text"><span class="tex-font-style-it"><a href="https://www.youtube.com/watch?v=TCckJwjMGcc">Juggernaut. - Lost Dream feat.星名はる</a></span></div><div class="epigraph-source"> </div></div><p>You are given four positive integers $$$n, l, r, k$$$. You need to find the lexicographically smallest$$$^{\text{∗}}$$$ array $$$a$$$ of length $$$n$$$, consisting of integers, such that:</p><ul> <li> For every $$$1 \leq i \leq n$$$, $$$l \leq a_i \leq r$$$. </li><li> $$$a_1 \, \& \, a_2 \, \& \, \ldots \, \& \, a_n = a_1 \oplus a_2 \oplus \ldots \oplus a_n$$$, where $$$\&$$$ denotes the <a href="https://en.wikipedia.org/wiki/Bitwise_operation#AND">bitwise AND operation</a> and $$$\oplus$$$ denotes the <a href="https://en.wikipedia.org/wiki/Bitwise_operation#XOR">bitwise XOR operation</a>. </li></ul><p>If no such array exists, output $$$-1$$$. Otherwise, since the entire array might be too large to output, output $$$a_k$$$ only.</p><div class="statement-footnote"><p>$$$^{\text{∗}}$$$An array $$$a$$$ is lexicographically smaller than an array $$$b$$$ if and only if one of the following holds: </p><ul> <li> $$$a$$$ is a prefix of $$$b$$$, but $$$a \ne b$$$; or </li><li> in the first position where $$$a$$$ and $$$b$$$ differ, the array $$$a$$$ has a smaller element than the corresponding element in $$$b$$$. </li></ul> </div></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains multiple test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \le t \le 10^4$$$). The description of the test cases follows. </p><p>Each test case contains four positive integers $$$n,l,r,k$$$ ($$$1 \le k \le n \le 10^{18}$$$, $$$1 \le l \le r \le 10^{18}$$$).</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output $$$a_k$$$ or $$$-1$$$ if no array meets the conditions.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id004222548562777567" id="id0028289076132867264" class="input-output-copier">Copy</div></div><pre id="id004222548562777567"><div class="test-example-line test-example-line-even test-example-line-0">9</div><div class="test-example-line test-example-line-odd test-example-line-1">1 4 4 1</div><div class="test-example-line test-example-line-even test-example-line-2">3 1 3 3</div><div class="test-example-line test-example-line-odd test-example-line-3">4 6 9 2</div><div class="test-example-line test-example-line-even test-example-line-4">4 6 9 3</div><div class="test-example-line test-example-line-odd test-example-line-5">4 6 7 4</div><div class="test-example-line test-example-line-even test-example-line-6">2 5 5 1</div><div class="test-example-line test-example-line-odd test-example-line-7">2 3 6 2</div><div class="test-example-line test-example-line-even test-example-line-8">999999999999999999 1000000000000000000 1000000000000000000 999999999999999999</div><div class="test-example-line test-example-line-odd test-example-line-9">1000000000000000000 1 999999999999999999 1000000000000000000</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id00395704333194448" id="id0044227882735168467" class="input-output-copier">Copy</div></div><pre id="id00395704333194448">4
+1
+6
+8
+-1
+-1
+-1
+1000000000000000000
+2
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, the array $$$a = [4]$$$. It can be proven that there is no array that meets the above requirements and has a smaller lexicographic order.</p><p>In the second test case, the array $$$a= [1,1,1]$$$. It can be proven that there is no array that meets the above requirements and has a smaller lexicographic order.</p><p>In the third test case and the fourth test case, the array $$$a = [6,6,8,8]$$$. It can be proven that there is no array that meets the above requirements and has a smaller lexicographic order.</p><p>In the fifth test case and the sixth test case, it can be proven that there is no array that meets the above requirements.</p></div>
