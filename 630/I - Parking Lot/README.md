@@ -1,0 +1,17 @@
+<h2><a href="https://codeforces.com/contest/630/problem/I" target="_blank" rel="noopener noreferrer">630I — Parking Lot</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1700 |
+| **Language** | PyPy 3-64 |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 630I](https://codeforces.com/contest/630/problem/I) |
+
+## Topics
+`combinatorics` `math`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">I. Parking Lot</div><div class="time-limit"><div class="property-title">time limit per test</div>0.5 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>64 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>To quickly hire highly skilled specialists one of the new IT City companies made an unprecedented move. Every employee was granted a car, and an employee can choose one of four different car makes.</p><p>The parking lot before the office consists of one line of <span class="tex-span">(2<i>n</i> - 2)</span> parking spaces. Unfortunately the total number of cars is greater than the parking lot capacity. Furthermore even amount of cars of each make is greater than the amount of parking spaces! That's why there are no free spaces on the parking lot ever.</p><p>Looking on the straight line of cars the company CEO thought that parking lot would be more beautiful if it contained exactly <span class="tex-span"><i>n</i></span> successive cars of the same make. Help the CEO determine the number of ways to fill the parking lot this way.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The only line of the input contains one integer <span class="tex-span"><i>n</i></span> (<span class="tex-span">3 ≤ <i>n</i> ≤ 30</span>) — the amount of successive cars of the same make.</p></div><div class="output-specification"><div class="section-title">Output</div><p>Output one integer — the number of ways to fill the parking lot by cars of four makes using the described way.</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0012903708045567575" id="id00372317006515849" class="input-output-copier">Copy</div></div><pre id="id0012903708045567575">3<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id002517495149305723" id="id0011416033138254356" class="input-output-copier">Copy</div></div><pre id="id002517495149305723">24</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>Let's denote car makes in the following way: A — Aston Martin, B —   Bentley, M — Mercedes-Maybach, Z — Zaporozhets. For <span class="tex-span"><i>n</i> = 3</span> there are the following appropriate ways to fill the parking lot: AAAB AAAM AAAZ ABBB AMMM AZZZ BBBA BBBM BBBZ BAAA BMMM BZZZ MMMA MMMB MMMZ MAAA MBBB MZZZ ZZZA ZZZB ZZZM ZAAA ZBBB ZMMM</p><p>Originally it was planned to grant sport cars of Ferrari, Lamborghini, Maserati and Bugatti makes but this idea was renounced because it is impossible to drive these cars having small road clearance on the worn-down roads of IT City.</p></div>
