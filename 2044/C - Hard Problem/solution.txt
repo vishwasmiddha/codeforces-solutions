@@ -1,0 +1,24 @@
+loops = int(input())
+for i in range(loops):
+    m,a,b,c = map(int,input().split())
+    tots= 0 
+    ava1 = m
+    ava2 = m
+    if m>a:
+        ava1 -= a
+        tots += a
+    else:
+        ava1 = 0
+        tots+=m
+    if m>b:
+        ava2 -= b
+        tots += b
+    else:
+        ava2 = 0
+        tots+=m
+    if ava1 + ava2 > c:
+        tots+=c
+    else:
+        tots+= ava1 + ava2
+    print(tots)
+        
