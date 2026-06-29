@@ -1,0 +1,21 @@
+n,k = map(int,input().split())
+l = [0]*26
+stri = input()
+standard = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for c in stri:
+    l[standard.index(c)] +=1
+l.sort()
+l.reverse()
+empty = []
+netempty = k
+for c in l:
+    if c <= netempty:
+        netempty -= c
+        empty.append(c)
+    else:
+        empty.append(netempty)
+        break
+sum = 0
+for c in empty:
+    sum += c**2
+print(sum)
