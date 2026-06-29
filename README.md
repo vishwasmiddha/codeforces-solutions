@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 104 | 25 |
+| 119 | 25 |
 
 ---
 
@@ -14,29 +14,29 @@
 
 - [*special](#special) (4)
 - [Uncategorized](#uncategorized) (1)
-- [binary search](#binary-search) (4)
-- [brute force](#brute-force) (24)
+- [binary search](#binary-search) (8)
+- [brute force](#brute-force) (28)
 - [combinatorics](#combinatorics) (1)
 - [constructive algorithms](#constructive-algorithms) (10)
-- [data structures](#data-structures) (2)
-- [dfs and similar](#dfs-and-similar) (1)
-- [dp](#dp) (8)
+- [data structures](#data-structures) (3)
+- [dfs and similar](#dfs-and-similar) (2)
+- [dp](#dp) (13)
 - [games](#games) (3)
-- [geometry](#geometry) (2)
+- [geometry](#geometry) (3)
 - [graph matchings](#graph-matchings) (2)
-- [graphs](#graphs) (1)
-- [greedy](#greedy) (26)
-- [hashing](#hashing) (1)
-- [implementation](#implementation) (55)
-- [math](#math) (32)
+- [graphs](#graphs) (2)
+- [greedy](#greedy) (32)
+- [hashing](#hashing) (2)
+- [implementation](#implementation) (64)
+- [math](#math) (37)
 - [matrices](#matrices) (1)
 - [number theory](#number-theory) (4)
-- [shortest paths](#shortest-paths) (1)
-- [sortings](#sortings) (10)
+- [shortest paths](#shortest-paths) (2)
+- [sortings](#sortings) (13)
 - [string suffix structures](#string-suffix-structures) (1)
-- [strings](#strings) (19)
+- [strings](#strings) (20)
 - [trees](#trees) (1)
-- [two pointers](#two-pointers) (2)
+- [two pointers](#two-pointers) (5)
 
 ---
 
@@ -59,7 +59,11 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/279/B%20-%20Books/solution.py) |
+| 492B | [Vanya and Lanterns](https://codeforces.com/contest/492/problem/B) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/492/B%20-%20Vanya%20and%20Lanterns/solution.py) |
+| 580B | [Kefa and Company](https://codeforces.com/contest/580/problem/B) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/580/B%20-%20Kefa%20and%20Company/solution.py) |
 | 706B | [Interesting drink](https://codeforces.com/contest/706/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/706/B%20-%20Interesting%20drink/solution.cpp) |
+| 1352C | [K-th Not Divisible by n](https://codeforces.com/contest/1352/problem/C) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1352/C%20-%20K-th%20Not%20Divisible%20by%20n/solution.py) |
 | 2025A | [Two Screens](https://codeforces.com/contest/2025/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2025/A%20-%20Two%20Screens/solution.py) |
 | 2061B | [Kevin and Geometry](https://codeforces.com/contest/2061/problem/B) | 1100 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2061/B%20-%20Kevin%20and%20Geometry/solution.txt) |
 | 2095C | [Would It Be Unrated?](https://codeforces.com/contest/2095/problem/C) | Unrated | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2095/C%20-%20Would%20It%20Be%20Unrated%3F/solution.py) |
@@ -74,9 +78,12 @@
 | 231A | [Team](https://codeforces.com/contest/231/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/231/A%20-%20Team/solution.cpp) |
 | 236A | [Boy or Girl](https://codeforces.com/contest/236/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/236/A%20-%20Boy%20or%20Girl/solution.cpp) |
 | 271A | [Beautiful Year](https://codeforces.com/contest/271/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/271/A%20-%20Beautiful%20Year/solution.cpp) |
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/279/B%20-%20Books/solution.py) |
 | 363B | [Fence](https://codeforces.com/contest/363/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/363/B%20-%20Fence/solution.cpp) |
 | 479A | [Expression](https://codeforces.com/contest/479/problem/A) | 1000 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/479/A%20-%20Expression/solution.py) |
 | 546A | [Soldier and Bananas](https://codeforces.com/contest/546/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/546/A%20-%20Soldier%20and%20Bananas/solution.cpp) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.py) |
+| 550C | [Divisibility by Eight](https://codeforces.com/contest/550/problem/C) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/C%20-%20Divisibility%20by%20Eight/solution.py) |
 | 1968A | [Maximize?](https://codeforces.com/contest/1968/problem/A) | 800 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1968/A%20-%20Maximize%3F/solution.txt) |
 | 1986B | [Matrix Stabilization](https://codeforces.com/contest/1986/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1986/B%20-%20Matrix%20Stabilization/solution.cpp) |
 | 2004B | [Game with Doors](https://codeforces.com/contest/2004/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2004/B%20-%20Game%20with%20Doors/solution.cpp) |
@@ -90,6 +97,7 @@
 | 2050B | [Transfusion](https://codeforces.com/contest/2050/problem/B) | 1100 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2050/B%20-%20Transfusion/solution.txt) |
 | 2055C | [The Trail](https://codeforces.com/contest/2055/problem/C) | 1400 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2055/C%20-%20The%20Trail/solution.txt) |
 | 2065A | [Skibidus and Amog'u](https://codeforces.com/contest/2065/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2065/A%20-%20Skibidus%20and%20Amog'u/solution.cpp) |
+| 2074D | [Counting Points](https://codeforces.com/contest/2074/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2074/D%20-%20Counting%20Points/solution.cpp) |
 | 2095C | [Would It Be Unrated?](https://codeforces.com/contest/2095/problem/C) | Unrated | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2095/C%20-%20Would%20It%20Be%20Unrated%3F/solution.py) |
 | 2106A | [Dr. TC](https://codeforces.com/contest/2106/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2106/A%20-%20Dr.%20TC/solution.py) |
 
@@ -120,11 +128,13 @@
 |---|---------|------------|----------|
 | 4C | [Registration System](https://codeforces.com/contest/4/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/4/C%20-%20Registration%20System/solution.cpp) |
 | 1986B | [Matrix Stabilization](https://codeforces.com/contest/1986/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1986/B%20-%20Matrix%20Stabilization/solution.cpp) |
+| 2074D | [Counting Points](https://codeforces.com/contest/2074/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2074/D%20-%20Counting%20Points/solution.cpp) |
 
 ### dfs and similar
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 520B | [Two Buttons](https://codeforces.com/contest/520/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/B%20-%20Two%20Buttons/solution.py) |
 | 2044G1 | [Medium Demon Problem (easy version)](https://codeforces.com/contest/2044/problem/G1) | 1700 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2044/G1%20-%20Medium%20Demon%20Problem%20(easy%20version)/solution.txt) |
 
 ### dp
@@ -135,6 +145,11 @@
 | 363B | [Fence](https://codeforces.com/contest/363/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/363/B%20-%20Fence/solution.cpp) |
 | 433B | [Kuriyama Mirai's Stones](https://codeforces.com/contest/433/problem/B) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/433/B%20-%20Kuriyama%20Mirai's%20Stones/solution.cpp) |
 | 455A | [Boredom](https://codeforces.com/contest/455/problem/A) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/455/A%20-%20Boredom/solution.cpp) |
+| 489C | [Given Length and Sum of Digits...](https://codeforces.com/contest/489/problem/C) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/489/C%20-%20Given%20Length%20and%20Sum%20of%20Digits.../solution.py) |
+| 545C | [Woodcutters](https://codeforces.com/contest/545/problem/C) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/545/C%20-%20Woodcutters/solution.py) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.py) |
+| 550C | [Divisibility by Eight](https://codeforces.com/contest/550/problem/C) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/C%20-%20Divisibility%20by%20Eight/solution.py) |
+| 698A | [Vacations](https://codeforces.com/contest/698/problem/A) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/698/A%20-%20Vacations/solution.py) |
 | 706B | [Interesting drink](https://codeforces.com/contest/706/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/706/B%20-%20Interesting%20drink/solution.cpp) |
 | 996A | [Hit the Lottery](https://codeforces.com/contest/996/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/996/A%20-%20Hit%20the%20Lottery/solution.cpp) |
 | 1195C | [Basketball Exercise](https://codeforces.com/contest/1195/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1195/C%20-%20Basketball%20Exercise/solution.cpp) |
@@ -154,6 +169,7 @@
 |---|---------|------------|----------|
 | 2053A | [Tender Carpenter](https://codeforces.com/contest/2053/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2053/A%20-%20Tender%20Carpenter/solution.cpp) |
 | 2061B | [Kevin and Geometry](https://codeforces.com/contest/2061/problem/B) | 1100 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2061/B%20-%20Kevin%20and%20Geometry/solution.txt) |
+| 2074D | [Counting Points](https://codeforces.com/contest/2074/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2074/D%20-%20Counting%20Points/solution.cpp) |
 
 ### graph matchings
 
@@ -166,6 +182,7 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 520B | [Two Buttons](https://codeforces.com/contest/520/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/B%20-%20Two%20Buttons/solution.py) |
 | 2044G1 | [Medium Demon Problem (easy version)](https://codeforces.com/contest/2044/problem/G1) | 1700 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2044/G1%20-%20Medium%20Demon%20Problem%20(easy%20version)/solution.txt) |
 
 ### greedy
@@ -181,6 +198,11 @@
 | 405A | [Gravity Flip](https://codeforces.com/contest/405/problem/A) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/405/A%20-%20Gravity%20Flip/solution.cpp) |
 | 462B | [Appleman and Card Game](https://codeforces.com/contest/462/problem/B) | 1300 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/462/B%20-%20Appleman%20and%20Card%20Game/solution.txt) |
 | 469A | [I Wanna Be the Guy](https://codeforces.com/contest/469/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/469/A%20-%20I%20Wanna%20Be%20the%20Guy/solution.cpp) |
+| 489C | [Given Length and Sum of Digits...](https://codeforces.com/contest/489/problem/C) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/489/C%20-%20Given%20Length%20and%20Sum%20of%20Digits.../solution.py) |
+| 514A | [Chewbaсca and Number](https://codeforces.com/contest/514/problem/A) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/514/A%20-%20Chewba%D1%81ca%20and%20Number/solution.py) |
+| 520B | [Two Buttons](https://codeforces.com/contest/520/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/B%20-%20Two%20Buttons/solution.py) |
+| 545C | [Woodcutters](https://codeforces.com/contest/545/problem/C) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/545/C%20-%20Woodcutters/solution.py) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.py) |
 | 996A | [Hit the Lottery](https://codeforces.com/contest/996/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/996/A%20-%20Hit%20the%20Lottery/solution.cpp) |
 | 1899E | [Queue Sort](https://codeforces.com/contest/1899/problem/E) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1899/E%20-%20Queue%20Sort/solution.cpp) |
 | 1986B | [Matrix Stabilization](https://codeforces.com/contest/1986/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1986/B%20-%20Matrix%20Stabilization/solution.cpp) |
@@ -198,17 +220,20 @@
 | 2057B | [Gorilla and the Exam](https://codeforces.com/contest/2057/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2057/B%20-%20Gorilla%20and%20the%20Exam/solution.cpp) |
 | 2065A | [Skibidus and Amog'u](https://codeforces.com/contest/2065/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2065/A%20-%20Skibidus%20and%20Amog'u/solution.cpp) |
 | 2106B | [St. Chroma](https://codeforces.com/contest/2106/problem/B) | 900 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2106/B%20-%20St.%20Chroma/solution.py) |
+| 2106C | [Cherry Bomb](https://codeforces.com/contest/2106/problem/C) | 1000 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2106/C%20-%20Cherry%20Bomb/solution.py) |
 
 ### hashing
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2A | [Winner](https://codeforces.com/contest/2/problem/A) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2/A%20-%20Winner/solution.py) |
 | 4C | [Registration System](https://codeforces.com/contest/4/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/4/C%20-%20Registration%20System/solution.cpp) |
 
 ### implementation
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 2A | [Winner](https://codeforces.com/contest/2/problem/A) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2/A%20-%20Winner/solution.py) |
 | 4C | [Registration System](https://codeforces.com/contest/4/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/4/C%20-%20Registration%20System/solution.cpp) |
 | 41A | [Translation](https://codeforces.com/contest/41/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/41/A%20-%20Translation/solution.cpp) |
 | 59A | [Word](https://codeforces.com/contest/59/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/59/A%20-%20Word/solution.cpp) |
@@ -233,6 +258,7 @@
 | 263A | [Beautiful Matrix](https://codeforces.com/contest/263/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/263/A%20-%20Beautiful%20Matrix/solution.cpp) |
 | 266A | [Stones on the Table](https://codeforces.com/contest/266/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/266/A%20-%20Stones%20on%20the%20Table/solution.cpp) |
 | 266B | [Queue at the School](https://codeforces.com/contest/266/problem/B) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/266/B%20-%20Queue%20at%20the%20School/solution.cpp) |
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/279/B%20-%20Books/solution.py) |
 | 281A | [Word Capitalization](https://codeforces.com/contest/281/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/281/A%20-%20Word%20Capitalization/solution.cpp) |
 | 282A | [Bit++](https://codeforces.com/contest/282/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/282/A%20-%20Bit%2B%2B/solution.cpp) |
 | 339A | [Helpful Maths](https://codeforces.com/contest/339/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/339/A%20-%20Helpful%20Maths/solution.cpp) |
@@ -242,11 +268,17 @@
 | 443A | [Anton and Letters](https://codeforces.com/contest/443/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/443/A%20-%20Anton%20and%20Letters/solution.cpp) |
 | 450B | [Jzzhu and Sequences](https://codeforces.com/contest/450/problem/B) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/450/B%20-%20Jzzhu%20and%20Sequences/solution.cpp) |
 | 451B | [Sort the Array](https://codeforces.com/contest/451/problem/B) | 1300 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/451/B%20-%20Sort%20the%20Array/solution.txt) |
+| 466A | [Cheap Travel](https://codeforces.com/contest/466/problem/A) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/466/A%20-%20Cheap%20Travel/solution.py) |
 | 467A | [George and Accommodation](https://codeforces.com/contest/467/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/467/A%20-%20George%20and%20Accommodation/solution.cpp) |
 | 469A | [I Wanna Be the Guy](https://codeforces.com/contest/469/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/469/A%20-%20I%20Wanna%20Be%20the%20Guy/solution.cpp) |
 | 486A | [Calculating Function](https://codeforces.com/contest/486/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/486/A%20-%20Calculating%20Function/solution.cpp) |
+| 489C | [Given Length and Sum of Digits...](https://codeforces.com/contest/489/problem/C) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/489/C%20-%20Given%20Length%20and%20Sum%20of%20Digits.../solution.py) |
+| 492B | [Vanya and Lanterns](https://codeforces.com/contest/492/problem/B) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/492/B%20-%20Vanya%20and%20Lanterns/solution.py) |
+| 514A | [Chewbaсca and Number](https://codeforces.com/contest/514/problem/A) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/514/A%20-%20Chewba%D1%81ca%20and%20Number/solution.py) |
 | 520A | [Pangram](https://codeforces.com/contest/520/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/A%20-%20Pangram/solution.cpp) |
+| 520B | [Two Buttons](https://codeforces.com/contest/520/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/B%20-%20Two%20Buttons/solution.py) |
 | 546A | [Soldier and Bananas](https://codeforces.com/contest/546/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/546/A%20-%20Soldier%20and%20Bananas/solution.cpp) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.py) |
 | 677A | [Vanya and Fence](https://codeforces.com/contest/677/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/677/A%20-%20Vanya%20and%20Fence/solution.cpp) |
 | 705A | [Hulk](https://codeforces.com/contest/705/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/705/A%20-%20Hulk/solution.cpp) |
 | 706B | [Interesting drink](https://codeforces.com/contest/706/problem/B) | 1100 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/706/B%20-%20Interesting%20drink/solution.cpp) |
@@ -264,6 +296,7 @@
 | 2048A | [Kevin and Combination Lock](https://codeforces.com/contest/2048/problem/A) | 800 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2048/A%20-%20Kevin%20and%20Combination%20Lock/solution.txt) |
 | 2050A | [Line Breaks](https://codeforces.com/contest/2050/problem/A) | 800 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2050/A%20-%20Line%20Breaks/solution.txt) |
 | 2065A | [Skibidus and Amog'u](https://codeforces.com/contest/2065/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2065/A%20-%20Skibidus%20and%20Amog'u/solution.cpp) |
+| 2074D | [Counting Points](https://codeforces.com/contest/2074/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2074/D%20-%20Counting%20Points/solution.cpp) |
 
 ### math
 
@@ -279,11 +312,15 @@
 | 450B | [Jzzhu and Sequences](https://codeforces.com/contest/450/problem/B) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/450/B%20-%20Jzzhu%20and%20Sequences/solution.cpp) |
 | 479A | [Expression](https://codeforces.com/contest/479/problem/A) | 1000 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/479/A%20-%20Expression/solution.py) |
 | 486A | [Calculating Function](https://codeforces.com/contest/486/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/486/A%20-%20Calculating%20Function/solution.cpp) |
+| 492B | [Vanya and Lanterns](https://codeforces.com/contest/492/problem/B) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/492/B%20-%20Vanya%20and%20Lanterns/solution.py) |
+| 520B | [Two Buttons](https://codeforces.com/contest/520/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/B%20-%20Two%20Buttons/solution.py) |
 | 546A | [Soldier and Bananas](https://codeforces.com/contest/546/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/546/A%20-%20Soldier%20and%20Bananas/solution.cpp) |
+| 550C | [Divisibility by Eight](https://codeforces.com/contest/550/problem/C) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/C%20-%20Divisibility%20by%20Eight/solution.py) |
 | 617A | [Elephant](https://codeforces.com/contest/617/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/617/A%20-%20Elephant/solution.cpp) |
 | 630I | [Parking Lot](https://codeforces.com/contest/630/problem/I) | 1700 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/630/I%20-%20Parking%20Lot/solution.txt) |
 | 630R | [Game](https://codeforces.com/contest/630/problem/R) | 1200 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/630/R%20-%20Game/solution.txt) |
 | 1328A | [Divisibility Problem](https://codeforces.com/contest/1328/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1328/A%20-%20Divisibility%20Problem/solution.cpp) |
+| 1352C | [K-th Not Divisible by n](https://codeforces.com/contest/1352/problem/C) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1352/C%20-%20K-th%20Not%20Divisible%20by%20n/solution.py) |
 | 1916B | [Two Divisors](https://codeforces.com/contest/1916/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1916/B%20-%20Two%20Divisors/solution.cpp) |
 | 1968A | [Maximize?](https://codeforces.com/contest/1968/problem/A) | 800 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1968/A%20-%20Maximize%3F/solution.txt) |
 | 2009A | [Minimize!](https://codeforces.com/contest/2009/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2009/A%20-%20Minimize!/solution.py) |
@@ -301,6 +338,7 @@
 | 2093A | [Ideal Generator](https://codeforces.com/contest/2093/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2093/A%20-%20Ideal%20Generator/solution.py) |
 | 2106A | [Dr. TC](https://codeforces.com/contest/2106/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2106/A%20-%20Dr.%20TC/solution.py) |
 | 2106B | [St. Chroma](https://codeforces.com/contest/2106/problem/B) | 900 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2106/B%20-%20St.%20Chroma/solution.py) |
+| 2106C | [Cherry Bomb](https://codeforces.com/contest/2106/problem/C) | 1000 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2106/C%20-%20Cherry%20Bomb/solution.py) |
 
 ### matrices
 
@@ -322,6 +360,7 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 266B | [Queue at the School](https://codeforces.com/contest/266/problem/B) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/266/B%20-%20Queue%20at%20the%20School/solution.cpp) |
+| 520B | [Two Buttons](https://codeforces.com/contest/520/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/B%20-%20Two%20Buttons/solution.py) |
 
 ### sortings
 
@@ -332,11 +371,14 @@
 | 405A | [Gravity Flip](https://codeforces.com/contest/405/problem/A) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/405/A%20-%20Gravity%20Flip/solution.cpp) |
 | 433B | [Kuriyama Mirai's Stones](https://codeforces.com/contest/433/problem/B) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/433/B%20-%20Kuriyama%20Mirai's%20Stones/solution.cpp) |
 | 451B | [Sort the Array](https://codeforces.com/contest/451/problem/B) | 1300 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/451/B%20-%20Sort%20the%20Array/solution.txt) |
+| 492B | [Vanya and Lanterns](https://codeforces.com/contest/492/problem/B) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/492/B%20-%20Vanya%20and%20Lanterns/solution.py) |
+| 580B | [Kefa and Company](https://codeforces.com/contest/580/problem/B) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/580/B%20-%20Kefa%20and%20Company/solution.py) |
 | 1899E | [Queue Sort](https://codeforces.com/contest/1899/problem/E) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1899/E%20-%20Queue%20Sort/solution.cpp) |
 | 1986B | [Matrix Stabilization](https://codeforces.com/contest/1986/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1986/B%20-%20Matrix%20Stabilization/solution.cpp) |
 | 2046A | [Swap Columns and Find a Path](https://codeforces.com/contest/2046/problem/A) | 1200 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2046/A%20-%20Swap%20Columns%20and%20Find%20a%20Path/solution.txt) |
 | 2055B | [Crafting](https://codeforces.com/contest/2055/problem/B) | 1000 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2055/B%20-%20Crafting/solution.txt) |
 | 2057B | [Gorilla and the Exam](https://codeforces.com/contest/2057/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2057/B%20-%20Gorilla%20and%20the%20Exam/solution.cpp) |
+| 2106C | [Cherry Bomb](https://codeforces.com/contest/2106/problem/C) | 1000 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2106/C%20-%20Cherry%20Bomb/solution.py) |
 
 ### string suffix structures
 
@@ -360,6 +402,7 @@
 | 281A | [Word Capitalization](https://codeforces.com/contest/281/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/281/A%20-%20Word%20Capitalization/solution.cpp) |
 | 339A | [Helpful Maths](https://codeforces.com/contest/339/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/339/A%20-%20Helpful%20Maths/solution.cpp) |
 | 520A | [Pangram](https://codeforces.com/contest/520/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/520/A%20-%20Pangram/solution.cpp) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.py) |
 | 734A | [Anton and Danik](https://codeforces.com/contest/734/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/734/A%20-%20Anton%20and%20Danik/solution.cpp) |
 | 2010C1 | [Message Transmission Error (easy version)](https://codeforces.com/contest/2010/problem/C1) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2010/C1%20-%20Message%20Transmission%20Error%20(easy%20version)/solution.py) |
 | 2025A | [Two Screens](https://codeforces.com/contest/2025/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2025/A%20-%20Two%20Screens/solution.py) |
@@ -378,8 +421,11 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/279/B%20-%20Books/solution.py) |
+| 580B | [Kefa and Company](https://codeforces.com/contest/580/problem/B) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/580/B%20-%20Kefa%20and%20Company/solution.py) |
 | 2025A | [Two Screens](https://codeforces.com/contest/2025/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2025/A%20-%20Two%20Screens/solution.py) |
 | 2055C | [The Trail](https://codeforces.com/contest/2055/problem/C) | 1400 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2055/C%20-%20The%20Trail/solution.txt) |
+| 2074D | [Counting Points](https://codeforces.com/contest/2074/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2074/D%20-%20Counting%20Points/solution.cpp) |
 
 ---
 
