@@ -1,0 +1,27 @@
+t = int(input())
+for some in range(t):
+    n,m= map(int,input().split())
+    l = []
+    s = input()
+    for some2 in range(n):
+        l2 = list(map(int,input().split()))
+        l.append(l2)
+    i,j = 0,0
+    for c in s:
+        if c=="D":
+            l[i][j] = 0-sum(l[i])
+            i+=1
+        else:
+            sum2 = 0
+            for lol in range(n):
+                sum2 += l[lol][j]
+            l[i][j] = 0 - sum2
+            j+=1
+    l[i][j] = 0-sum(l[i])
+    for c in l:
+        for d in c:
+            print(d,end=" ")
+        print()
+        
+ 
+    
