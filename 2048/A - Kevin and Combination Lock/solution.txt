@@ -1,0 +1,5 @@
+for some in range(int(input())):
+    if int(input())%33==0:
+        print("YES")
+    else:
+        print("NO")
