@@ -1,0 +1,14 @@
+loops = int(input())
+for tit in range(loops):
+    cols = int(input())
+    l1 = list(map(int,input().split()))
+    l2 = list(map(int,input().split()))
+    smallval = min(l1[0],l2[0])
+    sum = 0
+    for i in range(0,len(l1)):
+        sum+= max(l1[i],l2[i])
+        if min(l1[i],l2[i])>smallval:
+            smallval = min(l1[i],l2[i])
+        
+    sum+=smallval
+    print(sum)
