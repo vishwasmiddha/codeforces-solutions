@@ -1,0 +1,25 @@
+<h2><a href="https://codeforces.com/contest/1935/problem/D" target="_blank" rel="noopener noreferrer">1935D — Exam in MAC</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1800 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1935D](https://codeforces.com/contest/1935/problem/D) |
+
+## Topics
+`binary search` `combinatorics` `implementation` `math`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">D. Exam in MAC</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>The Master's Assistance Center has announced an entrance exam, which consists of the following.</p><p>The candidate is given a set $$$s$$$ of size $$$n$$$ and some strange integer $$$c$$$. For this set, it is needed to calculate the number of pairs of integers $$$(x, y)$$$ such that $$$0 \leq x \leq y \leq c$$$, $$$x + y$$$ <span class="tex-font-style-bf">is not</span> contained in the set $$$s$$$, and also $$$y - x$$$ <span class="tex-font-style-bf">is not</span> contained in the set $$$s$$$.</p><p>Your friend wants to enter the Center. Help him pass the exam!</p></div><div class="input-specification"><div class="section-title">Input</div><p>Each test consists of multiple test cases. The first line contains a single integer $$$t$$$ ($$$1 \leq t \leq 2 \cdot 10^4$$$) — the number of test cases. The description of the test cases follows.</p><p>The first line of each test case contains two integers $$$n$$$ and $$$c$$$ ($$$1 \leq n \leq 3 \cdot 10^5$$$, $$$1 \leq c \leq 10^9$$$) — the size of the set and the strange integer.</p><p>The second line of each test case contains $$$n$$$ integers $$$s_1, s_2, \ldots, s_{n}$$$ ($$$0 \leq s_1  \lt  s_2  \lt  \ldots  \lt  s_{n} \leq c$$$) — the elements of the set $$$s$$$.</p><p>It is guaranteed that the sum of $$$n$$$ over all test cases does not exceed $$$3 \cdot 10^5$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output a single integer — the number of suitable pairs of integers.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id008386112490436688" id="id007420706549383417" class="input-output-copier">Copy</div></div><pre id="id008386112490436688"><div class="test-example-line test-example-line-even test-example-line-0">8</div><div class="test-example-line test-example-line-odd test-example-line-1">3 3</div><div class="test-example-line test-example-line-odd test-example-line-1">1 2 3</div><div class="test-example-line test-example-line-even test-example-line-2">1 179</div><div class="test-example-line test-example-line-even test-example-line-2">57</div><div class="test-example-line test-example-line-odd test-example-line-3">4 6</div><div class="test-example-line test-example-line-odd test-example-line-3">0 3 5 6</div><div class="test-example-line test-example-line-even test-example-line-4">1 1</div><div class="test-example-line test-example-line-even test-example-line-4">1</div><div class="test-example-line test-example-line-odd test-example-line-5">5 10</div><div class="test-example-line test-example-line-odd test-example-line-5">0 2 4 8 10</div><div class="test-example-line test-example-line-even test-example-line-6">5 10</div><div class="test-example-line test-example-line-even test-example-line-6">1 3 5 7 9</div><div class="test-example-line test-example-line-odd test-example-line-7">4 10</div><div class="test-example-line test-example-line-odd test-example-line-7">2 4 6 7</div><div class="test-example-line test-example-line-even test-example-line-8">3 1000000000</div><div class="test-example-line test-example-line-even test-example-line-8">228 1337 998244353</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id00529848620158454" id="id008118656922838645" class="input-output-copier">Copy</div></div><pre id="id00529848620158454">3
+16139
+10
+2
+33
+36
+35
+499999998999122959
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, the following pairs are suitable: $$$(0, 0)$$$, $$$(2, 2)$$$, $$$(3, 3)$$$.</p><p>In the third test case, the following pairs are suitable: $$$(0, 1)$$$, $$$(0, 2)$$$, $$$(0, 4)$$$, $$$(1, 3)$$$, $$$(2, 6)$$$, $$$(3, 4)$$$, $$$(3, 5)$$$, $$$(4, 5)$$$, $$$(4, 6)$$$, $$$(5, 6)$$$.</p></div>
