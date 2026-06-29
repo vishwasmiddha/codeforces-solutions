@@ -1,0 +1,22 @@
+<h2><a href="https://codeforces.com/contest/1899/problem/E" target="_blank" rel="noopener noreferrer">1899E — Queue Sort</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1300 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1899E](https://codeforces.com/contest/1899/problem/E) |
+
+## Topics
+`greedy` `implementation` `sortings`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">E. Queue Sort</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Vlad found an array $$$a$$$ of $$$n$$$ integers and decided to sort it in non-decreasing order.</p><p>To do this, Vlad can apply the following operation any number of times:</p><ul> <li> Extract the first element of the array and insert it at the end; </li><li> Swap <span class="tex-font-style-bf">that</span> element with the previous one until it becomes the first or until it becomes <span class="tex-font-style-bf">strictly</span> greater than the previous one. </li></ul><p>Note that both actions are part of the operation, and for one operation, you <span class="tex-font-style-bf">must</span> apply both actions.</p><p>For example, if you apply the operation to the array [$$$4, 3, 1, 2, 6, 4$$$], it will change as follows:</p><ul><li> [$$$\color{red}{4}, 3, 1, 2, 6, 4$$$];</li><li> [$$$3, 1, 2, 6, 4, \color{red}{4}$$$];</li><li> [$$$3, 1, 2, 6, \color{red}{4}, 4$$$];</li><li> [$$$3, 1, 2, \color{red}{4}, 6, 4$$$].</li></ul><p>Vlad doesn't have time to perform all the operations, so he asks you to determine the minimum number of operations required to sort the array or report that it is impossible.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line of the input contains a single integer $$$t$$$ ($$$1 \le t \le 10^4$$$) — the number of test cases. Descriptions of the test cases follow.</p><p>The first line of each test case contains a single integer $$$n$$$ ($$$1 \le n \le 2 \cdot 10^5$$$) — the length of the array.</p><p>The second line of each test case contains $$$n$$$ integers $$$a_1, a_2, a_3, \dots, a_n$$$ ($$$1 \le a_i \le 10^9$$$) — the elements of the array.</p><p>It is guaranteed that the sum of $$$n$$$ over all testcases does not exceed $$$2 \cdot 10^5$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, output a single integer — the minimum number of operations needed to sort the array. If it is impossible to do so, output $$$-1$$$ as the answer.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id00055063022260359196" id="id003022104922262291" class="input-output-copier">Copy</div></div><pre id="id00055063022260359196"><div class="test-example-line test-example-line-even test-example-line-0">5</div><div class="test-example-line test-example-line-odd test-example-line-1">5</div><div class="test-example-line test-example-line-odd test-example-line-1">6 4 1 2 5</div><div class="test-example-line test-example-line-even test-example-line-2">7</div><div class="test-example-line test-example-line-even test-example-line-2">4 5 3 7 8 6 2</div><div class="test-example-line test-example-line-odd test-example-line-3">6</div><div class="test-example-line test-example-line-odd test-example-line-3">4 3 1 2 6 4</div><div class="test-example-line test-example-line-even test-example-line-4">4</div><div class="test-example-line test-example-line-even test-example-line-4">5 2 4 2</div><div class="test-example-line test-example-line-odd test-example-line-5">3</div><div class="test-example-line test-example-line-odd test-example-line-5">2 2 3</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id002370083357224695" id="id0032665731242560025" class="input-output-copier">Copy</div></div><pre id="id002370083357224695">2
+6
+-1
+-1
+0
+</pre></div></div></div>
