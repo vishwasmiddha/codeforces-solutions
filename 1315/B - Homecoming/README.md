@@ -1,0 +1,33 @@
+<h2><a href="https://codeforces.com/contest/1315/problem/B" target="_blank" rel="noopener noreferrer">1315B — Homecoming</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1300 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1315B](https://codeforces.com/contest/1315/problem/B) |
+
+## Topics
+`binary search` `dp` `greedy` `strings`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">B. Homecoming</div><div class="time-limit"><div class="property-title">time limit per test</div>1 second</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>After a long party Petya decided to return home, but he turned out to be at the opposite end of the town from his home. There are $$$n$$$ crossroads in the line in the town, and there is either the bus or the tram station at each crossroad.</p><p>The crossroads are represented as a string $$$s$$$ of length $$$n$$$, where $$$s_i = \texttt{A}$$$, if there is a bus station at $$$i$$$-th crossroad, and $$$s_i = \texttt{B}$$$, if there is a tram station at $$$i$$$-th crossroad. Currently Petya is at the first crossroad (which corresponds to $$$s_1$$$) and his goal is to get to the last crossroad (which corresponds to $$$s_n$$$).</p><p>If for two crossroads $$$i$$$ and $$$j$$$ for all crossroads $$$i, i+1, \ldots, j-1$$$ there is a bus station, one can pay $$$a$$$ roubles for the bus ticket, and go from $$$i$$$-th crossroad to the $$$j$$$-th crossroad by the bus (it is not necessary to have a bus station at the $$$j$$$-th crossroad). Formally, paying $$$a$$$ roubles Petya can go from $$$i$$$ to $$$j$$$ if $$$s_t = \texttt{A}$$$ for all $$$i \le t  \lt  j$$$. </p><p>If for two crossroads $$$i$$$ and $$$j$$$ for all crossroads $$$i, i+1, \ldots, j-1$$$ there is a tram station, one can pay $$$b$$$ roubles for the tram ticket, and go from $$$i$$$-th crossroad to the $$$j$$$-th crossroad by the tram (it is not necessary to have a tram station at the $$$j$$$-th crossroad). Formally, paying $$$b$$$ roubles Petya can go from $$$i$$$ to $$$j$$$ if $$$s_t = \texttt{B}$$$ for all $$$i \le t  \lt  j$$$.</p><p>For example, if $$$s$$$="<span class="tex-font-style-tt">AABBBAB</span>", $$$a=4$$$ and $$$b=3$$$ then Petya needs:</p><center><img class="tex-graphics" src="https://espresso.codeforces.com/cdb4635b8bb0234f87d3e22260f49849fcaa2007.png" style="max-width: 100.0%;max-height: 100.0%;"></center><ul> <li> buy one bus ticket to get from $$$1$$$ to $$$3$$$, </li><li> buy one tram ticket to get from $$$3$$$ to $$$6$$$, </li><li> buy one bus ticket to get from $$$6$$$ to $$$7$$$. </li></ul><p>Thus, in total he needs to spend $$$4+3+4=11$$$ roubles. Please note that the type of the stop at the last crossroad (i.e. the character $$$s_n$$$) does not affect the final expense.</p><p>Now Petya is at the first crossroad, and he wants to get to the $$$n$$$-th crossroad. After the party he has left with $$$p$$$ roubles. He's decided to go to some station on foot, and then go to home using only public transport.</p><p>Help him to choose the closest crossroad $$$i$$$ to go on foot the first, so he has enough money to get from the $$$i$$$-th crossroad to the $$$n$$$-th, using only tram and bus tickets.</p></div><div class="input-specification"><div class="section-title">Input</div><p>Each test contains one or more test cases. The first line contains the number of test cases $$$t$$$ ($$$1 \le t \le 10^4$$$).</p><p>The first line of each test case consists of three integers $$$a, b, p$$$ ($$$1 \le a, b, p \le 10^5$$$) — the cost of bus ticket, the cost of tram ticket and the amount of money Petya has.</p><p>The second line of each test case consists of one string $$$s$$$, where $$$s_i = \texttt{A}$$$, if there is a bus station at $$$i$$$-th crossroad, and $$$s_i = \texttt{B}$$$, if there is a tram station at $$$i$$$-th crossroad ($$$2 \le |s| \le 10^5$$$).</p><p>It is guaranteed, that the sum of the length of strings $$$s$$$ by all test cases in one test doesn't exceed $$$10^5$$$.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case print one number — the minimal index $$$i$$$ of a crossroad Petya should go on foot. The rest of the path (i.e. from $$$i$$$ to $$$n$$$ he should use public transport).</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0030160687198056413" id="id00731324754684673" class="input-output-copier">Copy</div></div><pre id="id0030160687198056413">5
+2 2 1
+BB
+1 1 1
+AB
+3 2 8
+AABBBBAABB
+5 3 4
+BBBBB
+2 1 1
+ABABAB
+</pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id00046732024282274964" id="id00610415673126888" class="input-output-copier">Copy</div></div><pre id="id00046732024282274964">2
+1
+3
+1
+6
+</pre></div></div></div>
