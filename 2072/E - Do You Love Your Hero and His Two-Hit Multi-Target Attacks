@@ -1,40 +1,194 @@
-<h2><a href="https://codeforces.com/contest/2072/problem/E" target="_blank" rel="noopener noreferrer">2072E — Do You Love Your Hero and His Two-Hit Multi-Target Attacks?</a></h2>
-
-| | |
-|---|---|
-| **Difficulty** | 1500 |
-| **Language** | C++23 (GCC 14-64, msys2) |
-| **Verdict** | ✅ Accepted |
-| **Problem Link** | [Codeforces 2072E](https://codeforces.com/contest/2072/problem/E) |
-
-## Topics
-`binary search` `brute force` `constructive algorithms` `dp` `geometry` `greedy` `math`
-
----
-
-## Problem Statement
-
-<div class="header"><div class="title">E. Do You Love Your Hero and His Two-Hit Multi-Target Attacks?</div><div class="time-limit"><div class="property-title">time limit per test</div>3 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Akito decided to study a new powerful spell. Since it possesses immeasurable strength, it certainly requires a lot of space and careful preparation. For this, Akito went out into the field. Let's represent the field as a Cartesian coordinate system.</p><p>For the spell, Akito needs to place $$$0 \le n \le 500$$$ staffs at <span class="tex-font-style-bf">distinct integer coordinates</span> in the field such that there will be <span class="tex-font-style-bf">exactly $$$k$$$ pairs</span> $$$(i, j)$$$ such that $$$1 \le i  \lt  j \le n$$$ and $$$\rho(i, j) = d(i, j)$$$.</p><p>Here, for two points with integer coordinates $$$a = (x_a, y_a)$$$ and $$$b = (x_b, y_b)$$$, $$$\rho(a, b) = \sqrt{(x_a - x_b)^2 + (y_a - y_b)^2}$$$ and $$$d(a, b) = |x_a - x_b| + |y_a - y_b|$$$.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line of input contains a single number $$$t$$$ ($$$1 \le t \le 1000$$$) — the number of test cases.</p><p>In the only line of each test case, there is a single number $$$k$$$ ($$$0 \le k \le 10^5$$$) — the number of pairs of staffs for which the equality $$$\rho(i, j) = d(i, j)$$$ must hold.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, the first line of output should print the number $$$n$$$ ($$$0 \le n \le 500$$$) — the number of placed staffs.</p><p>In the following $$$n$$$ lines, pairs of <span class="tex-font-style-bf">integers</span> $$$x_i, y_i$$$ $$$(-10^9 \le x_i, y_i \le 10^9)$$$ should be printed — the coordinates of the $$$i$$$-th staff. The points in which staffs stand must be distinct.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id0041280394914149066" id="id0003613642195176714" class="input-output-copier">Copy</div></div><pre id="id0041280394914149066"><div class="test-example-line test-example-line-even test-example-line-0">3</div><div class="test-example-line test-example-line-odd test-example-line-1">0</div><div class="test-example-line test-example-line-even test-example-line-2">2</div><div class="test-example-line test-example-line-odd test-example-line-3">5</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id005196334265886899" id="id008136289890466235" class="input-output-copier">Copy</div></div><pre id="id005196334265886899">6
-69 52
-4 20
-789 9308706
-1337 1337
--1234 -5678
-23456178 707
-10
--236 -346262358
-273568 6435267
-2365437 31441367
-246574 -45642372
--236 56
-4743623 -192892 
-10408080 -8173135
--237415357 31441367
--78125638 278
-56 143231
-5
-1 1
-2 1
-1 5
-3 5
-1 10</pre></div></div></div>
+// Problem: E. Do You Love Your Hero and His Two-Hit Multi-Target Attacks?
+// Contest: Codeforces - Codeforces Round 1006 (Div. 3)
+// URL: https://codeforces.com/contest/2072/problem/E
+// Memory Limit: 256 MB
+// Time Limit: 3000 ms
+ 
+// Problem: B. Pashmak and Flowers
+// Contest: Codeforces - Codeforces Round 261 (Div. 2)
+// URL: https://codeforces.com/problemset/problem/459/B
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+ 
+#include <algorithm>
+#include <cmath>
+#include <cstdio>
+#include <iostream>
+#include <map>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <set>
+#include <numeric>
+#include <vector>
+#include <stack>
+using namespace std;
+const long long INF = 9223372036854775807;
+const long long MOD = 1e9 + 7;
+ 
+ 
+template<typename T>
+void readvector(vector<T>& v, int n) {
+    v.resize(n);
+    for (int i = 0; i < n; ++i)
+        cin >> v[i];
+}
+ 
+#define REP(n) for(int t=0; t<n; t++)
+#define FOR(i, n) for (i = 0; i < n; i++)
+#define FFOR(i, j, n) for(i = j; j < n; j++)
+#define FOR_S(i, n, k) for (i = 0; i < n; i += k)
+#define RFOR(i, n) for (i = n - 1; i >= 0; i--)
+#define RFOR_S(i, n, k) for (i = n - 1; i >= 0; i -= k)
+#define MAX_OF(x, y) ((x > y) ? x : y)
+#define MIN_OF(x, y) ((x > y) ? y : x)
+#define MIN_IN(A) *(std::min_element(A.begin(), A.end()))
+#define MAX_IN(A) *(std::max_element(A.begin(), A.end()))
+#define MAX_AT(A) (std::max_element(A.begin(), A.end()) - A.begin())
+#define MIN_AT(A) (std::min_element(A.begin(), A.end()) - A.begin())
+#define COUNT(V,A) count(V.begin(), V.end(), A);
+#define TESTCASE                                                              \
+int testcase;                                                               \
+std::cin>>testcase;                                                         \
+while(testcase--)
+#define GCD(a,b) std::__gcd(a,b);
+#define LCM(a, b) ((a) / std::__gcd((a), (b)) * (b))
+#define SORT(A) std::sort(A.begin(), A.end());
+#define RSORT(A) std::sort(A.rbegin(), A.rend());
+#define REVERSE(A) std::reverse(A.begin(), A.end());
+#define ANY(container, result, condition)                                      \
+result = false;                                                              \
+for (const auto &e : container)                                              \
+    if (condition(e)) {                                                        \
+    result = true;                                                           \
+    break;                                                                   \
+    }
+#define ALL(container, result, condition)                                      \
+result = true;                                                               \
+for (const auto &e : container)                                              \
+    if (!condition(e)) {                                                       \
+    result = false;                                                          \
+    break;                                                                   \
+    }
+template<typename... Args>
+void print(Args... args) {
+    ((cout << args << " "), ...);
+    cout << "
+";
+}
+ 
+#define ll long long
+#define LL long long
+#define pb push_back
+#define pop pop_back
+ 
+LL power(LL x, unsigned long long y) {
+    // returns  x^y % p
+    LL res = 1;
+    x = x % MOD; 
+    while (y > 0) {  
+        if (y & 1) 
+            res = (res*x) % MOD;  
+        y = y>>1;
+        x = (x*x) % MOD;   
+    } 
+    return res; 
+ }
+ 
+ 
+ 
+void speed(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+}
+ 
+ll nc2(ll x){
+	return x*(x-1)/2;
+}
+ 
+int main(){
+    //speed();
+	TESTCASE{
+		int target;
+		cin >> target;
+		ll done=0;
+		ll low,high,mid,nc2mid;
+		vector<ll> v;
+		while(target!=done){
+			low = 1;
+			high = target+2;
+			while(high-low>1){
+				mid=low+(high-low)/2;
+				nc2mid = nc2(mid);
+				if(nc2mid>target-done){
+					high=mid;
+				} else if (nc2mid<target-done){
+					low=mid;
+				} else {
+					low=mid;
+					high=low+1;
+				}
+				//print(low,mid,high,target,done);
+				
+			}
+			done+=nc2(low);
+			v.pb(low);
+		}
+		ll sum = accumulate(v.begin(),v.end(),0LL);
+		cout << sum << "
+";
+		ll x=0,y=0;
+		// cout << "vec: ";
+		// for(auto c:v){
+			// cout << c << " ";
+		// }
+		//cout << "
+";
+		for (auto c:v){
+			for(ll i=0;i<c;i++){
+				x++;
+				cout << x << " " << y << "
+";
+			}
+			y++;
+		}
+	}
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
