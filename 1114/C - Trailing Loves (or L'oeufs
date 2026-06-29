@@ -1,17 +1,236 @@
-<h2><a href="https://codeforces.com/contest/1114/problem/C" target="_blank" rel="noopener noreferrer">1114C — Trailing Loves (or L'oeufs?)</a></h2>
-
-| | |
-|---|---|
-| **Difficulty** | 1700 |
-| **Language** | C++23 (GCC 14-64, msys2) |
-| **Verdict** | ✅ Accepted |
-| **Problem Link** | [Codeforces 1114C](https://codeforces.com/contest/1114/problem/C) |
-
-## Topics
-`brute force` `implementation` `math` `number theory`
-
----
-
-## Problem Statement
-
-<div class="header"><div class="title">C. Trailing Loves (or L'oeufs?)</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><div class="epigraph"><div class="epigraph-text"> The number "zero" is called "love" (or "l'oeuf" to be precise, literally means "egg" in French), for example when denoting the zero score in a game of tennis. </div></div><p>Aki is fond of numbers, especially those with trailing zeros. For example, the number $$$9200$$$ has two trailing zeros. Aki thinks the more trailing zero digits a number has, the prettier it is.</p><p>However, Aki believes, that the number of trailing zeros of a number is not static, but depends on the base (radix) it is represented in. Thus, he considers a few scenarios with some numbers and bases. And now, since the numbers he used become quite bizarre, he asks you to help him to calculate the beauty of these numbers.</p><p>Given two integers $$$n$$$ and $$$b$$$ (in decimal notation), your task is to calculate the number of trailing zero digits in the $$$b$$$-ary (in the base/radix of $$$b$$$) representation of $$$n\,!$$$ (<a href="https://en.wikipedia.org/wiki/Factorial">factorial</a> of $$$n$$$). </p></div><div class="input-specification"><div class="section-title">Input</div><p>The only line of the input contains two integers $$$n$$$ and $$$b$$$ ($$$1 \le n \le 10^{18}$$$, $$$2 \le b \le 10^{12}$$$).</p></div><div class="output-specification"><div class="section-title">Output</div><p>Print an only integer — the number of trailing zero digits in the $$$b$$$-ary representation of $$$n!$$$</p></div><div class="sample-tests"><div class="section-title">Examples</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id00311543122577289" id="id005861669415078566" class="input-output-copier">Copy</div></div><pre id="id00311543122577289">6 9<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id003077799041880114" id="id009720236360367674" class="input-output-copier">Copy</div></div><pre id="id003077799041880114">1<br></pre></div><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id005729718323032279" id="id002160676272899016" class="input-output-copier">Copy</div></div><pre id="id005729718323032279">38 11<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id00041695063041715885" id="id006703302973373411" class="input-output-copier">Copy</div></div><pre id="id00041695063041715885">3<br></pre></div><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id006937512235392627" id="id0010422218419420592" class="input-output-copier">Copy</div></div><pre id="id006937512235392627">5 2<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id006808023131097086" id="id009504297211331213" class="input-output-copier">Copy</div></div><pre id="id006808023131097086">3<br></pre></div><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id007671102874507096" id="id009069105465344063" class="input-output-copier">Copy</div></div><pre id="id007671102874507096">5 10<br></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id007728153904484246" id="id004913038286994157" class="input-output-copier">Copy</div></div><pre id="id007728153904484246">1<br></pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first example, $$$6!_{(10)} = 720_{(10)} = 880_{(9)}$$$.</p><p>In the third and fourth example, $$$5!_{(10)} = 120_{(10)} = 1111000_{(2)}$$$.</p><p>The representation of the number $$$x$$$ in the $$$b$$$-ary base is $$$d_1, d_2, \ldots, d_k$$$ if $$$x = d_1 b^{k - 1} + d_2 b^{k - 2} + \ldots + d_k b^0$$$, where $$$d_i$$$ are integers and $$$0 \le d_i \le b - 1$$$. For example, the number $$$720$$$ from the first example is represented as $$$880_{(9)}$$$ since $$$720 = 8 \cdot 9^2 + 8 \cdot 9 + 0 \cdot 1$$$.</p><p>You can read more about bases <a href="https://en.wikipedia.org/wiki/Radix">here</a>.</p></div>
+// Problem: C. Trailing Loves (or L'oeufs?)
+// Contest: Codeforces - Codeforces Round 538 (Div. 2)
+// URL: https://codeforces.com/problemset/problem/1114/C
+// Memory Limit: 256 MB
+// Time Limit: 2000 ms
+ 
+// Problem: B. Pashmak and Flowers
+// Contest: Codeforces - Codeforces Round 261 (Div. 2)
+// URL: https://codeforces.com/problemset/problem/459/B
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+ 
+#include <iostream>    // cin, cout, cerr
+#include <vector>      // vector
+#include <array>       // array
+#include <deque>       // deque
+#include <list>        // list
+#include <forward_list>// forward_list
+#include <stack>       // stack
+#include <queue>       // queue, priority_queue
+#include <set>         // set, multiset
+#include <map>         // map, multimap
+#include <unordered_set> // unordered_set, unordered_multiset
+#include <unordered_map> // unordered_map, unordered_multimap
+#include <string>      // string, stoi, to_string
+#include <cstring>     // memset, strcpy (C-style strings)
+#include <sstream>     // stringstream
+#include <algorithm>   // sort, min, max, reverse, lower_bound, upper_bound
+#include <numeric>     // accumulate, gcd, lcm
+#include <functional>  // greater, less, function
+#include <utility>     // pair, swap, move
+#include <tuple>       // tuple, tie
+#include <cmath>       // sqrt, pow, abs, sin, cos, etc.
+#include <bitset>      // bitset
+ 
+ 
+using namespace std;
+const long long INF = 9223372036854775807;
+const long long MOD = 1e9 + 7;
+ 
+ 
+template<typename T>
+void readvector(vector<T>& v, int n) {
+    v.resize(n);
+    for (int i = 0; i < n; ++i)
+        cin >> v[i];
+}
+ 
+ 
+ 
+template <typename T>
+auto SUM(const T& A) {
+    using Elem = typename T::value_type;
+    return std::accumulate(A.begin(), A.end(), Elem(0));
+}
+ 
+void boolprint(bool a){
+    cout << (a?"YES
+":"NO
+");
+}
+ 
+template <typename T>
+void printvec(vector<T> &v){
+    cout << "Vector: {";
+    for(auto c:v)cout << c << ", ";
+    cout << "}
+";
+}
+#define REP(n) for(int t=0; t<n; t++)
+#define FOR(i, n) for (i = 0; i < n; i++)
+#define FFOR(i, j, n) for(i = j; j < n; j++)
+#define FOR_S(i, n, k) for (i = 0; i < n; i += k)
+#define RFOR(i, n) for (i = n - 1; i >= 0; i--)
+#define RFOR_S(i, n, k) for (i = n - 1; i >= 0; i -= k)
+#define MAX_OF(x, y) ((x > y) ? x : y)
+#define MIN_OF(x, y) ((x > y) ? y : x)
+#define MIN_IN(A) *(std::min_element(A.begin(), A.end()))
+#define MAX_IN(A) *(std::max_element(A.begin(), A.end()))
+#define MAX_AT(A) (std::max_element(A.begin(), A.end()) - A.begin())
+#define MIN_AT(A) (std::min_element(A.begin(), A.end()) - A.begin())
+#define COUNT(V,A) count(V.begin(), V.end(), A);
+#define makevec(v,n) \
+vector<int> v;               \
+readvector(v,n);  
+#define TESTCASE                                                              \
+int testcase;                                                               \
+std::cin>>testcase;                                                         \
+while(testcase--)
+#define GCD(a,b) std::__gcd(a,b);
+#define LCM(a, b) ((a) / std::__gcd((a), (b)) * (b))
+#define SORT(A) std::sort(A.begin(), A.end());
+#define RSORT(A) std::sort(A.rbegin(), A.rend());
+#define REVERSE(A) std::reverse(A.begin(), A.end());
+#define ANY(container, result, condition)                                      \
+result = false;                                                              \
+for (const auto &e : container)                                              \
+    if (condition(e)) {                                                        \
+    result = true;                                                           \
+    break;                                                                   \
+    }
+#define ALL(container, result, condition)                                      \
+result = true;                                                               \
+for (const auto &e : container)                                              \
+    if (!condition(e)) {                                                       \
+    result = false;                                                          \
+    break;                                                                   \
+    }
+template<typename... Args>
+void print(Args... args) {
+    ((cout << args << " "), ...);
+    cout << "
+";
+}
+ 
+#define ll long long
+#define LL long long
+#define vec vector
+#define pb push_back
+#define popb pop_back
+ 
+LL power(LL x, unsigned long long y) {
+    // returns  x^y % p
+    LL res = 1;
+    x = x % MOD; 
+    while (y > 0) {  
+        if (y & 1) 
+            res = (res*x) % MOD;  
+        y = y>>1;
+        x = (x*x) % MOD;   
+    } 
+    return res; 
+ }
+ 
+ 
+ 
+void speed(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+}
+ 
+template <typename T>
+void sieve(T n, vector<T> &v){
+    vector<bool> isnotprime(n+1,false);
+    isnotprime[0]=true;
+    isnotprime[1]=true;
+    vector<T> primes;
+    for (T i=2;i*i<=n;i++){
+        if (!isnotprime[i]){
+            for (T j=i*i;j<=n;j+=i){
+                isnotprime[j]=true;
+            }
+ 
+        }
+    }
+    for (T i=2;i<=n;i++){
+        if (!isnotprime[i]){
+            v.push_back(i);
+        }
+    }
+	return;
+}
+ 
+ 
+int main(){
+    speed();
+    ll n,b;cin>>n>>b;
+    vector<pair<ll,ll>> factors;
+    ll small = pow(b,0.5)+1;
+    vector<ll> primes;
+    sieve(small,primes);
+    ll power=0;
+    for(auto c:primes){
+        power = 0;
+        while(b%c==0){
+            b = b/c;
+            power++;
+        }
+        if(power!=0)factors.pb({c,power});
+    }
+    if(b!=1){
+        factors.pb({b,1});
+    }
+    vector<ll> req;
+    for(auto c:factors){
+        power = 0;
+        ll temp = c.first;
+        while(temp<=n){
+            power += n/temp;
+            if(temp>n/c.first)break;
+            temp = temp*c.first;
+        }
+        req.pb(power/c.second);
+    
+    }
+    cout << MIN_IN(req) << "
+";
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
