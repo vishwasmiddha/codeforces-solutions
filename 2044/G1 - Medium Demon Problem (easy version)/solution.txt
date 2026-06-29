@@ -1,0 +1,39 @@
+loops = int(input())
+for something in range(loops):
+    n = int(input())
+    #r = [0] + list(range(2,n+1)) + [1]
+    r = [0]+list(map(int,input().split()))
+    l = [-1]*(n+1)
+    for j in range(1,n+1):
+        if l[j] == -1:
+            l[j] = -2
+            empty = [j]
+            new = r[j]
+            
+            while (l[new]==-1):
+                #print(new)
+                empty.append(new)
+                l[new]=-2
+                new = r[new]
+                
+            
+            if l[new]==-2:
+                #print("Entered new loop with",j)
+                indnew = empty.index(new)
+                l1 = empty[:indnew]
+                l2 = empty[indnew:]
+                for i in range(indnew,len(empty)):
+                    l[empty[i]] = 0
+                for i in range(0,indnew):
+                    l[empty[i]]=indnew-i
+                
+                #print(j, "is not -1 now.")
+            else:
+                #print("Entered old loop with",j)
+                theval = l[new]
+                for i in range(len(empty)-1,-1,-1):
+                    l[empty[i]] = len(empty)-i + theval
+        #else:
+            #print(j, "Wasn't -1")
+    print(max(l)+2)
+        
