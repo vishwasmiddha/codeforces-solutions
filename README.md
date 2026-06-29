@@ -6,12 +6,13 @@
 
 | Total Problems | Topics |
 |---|---|
-| 14 | 6 |
+| 15 | 7 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
+- [Uncategorized](#uncategorized) (1)
 - [brute force](#brute-force) (3)
 - [greedy](#greedy) (3)
 - [implementation](#implementation) (9)
@@ -20,6 +21,12 @@
 - [strings](#strings) (5)
 
 ---
+
+### Uncategorized
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2240F | [Hunting the Beast](https://codeforces.com/contest/2240/problem/F) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2240/F%20-%20Hunting%20the%20Beast/solution.cpp) |
 
 ### brute force
 
