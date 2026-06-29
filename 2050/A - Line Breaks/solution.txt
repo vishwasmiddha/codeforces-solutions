@@ -1,0 +1,13 @@
+for something in range(int(input())):
+    n,m = map(int,input().split())
+    words = []
+    
+    x=0
+    tots = 0
+    for yeah in range(n):
+        word = input()
+        if tots <= m:
+            tots+=len(word)
+            if tots <= m:
+                x+=1
+    print(x)
