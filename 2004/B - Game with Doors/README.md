@@ -1,0 +1,21 @@
+<h2><a href="https://codeforces.com/contest/2004/problem/B" target="_blank" rel="noopener noreferrer">2004B — Game with Doors</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1000 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 2004B](https://codeforces.com/contest/2004/problem/B) |
+
+## Topics
+`brute force` `greedy`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">B. Game with Doors</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>There are $$$100$$$ rooms arranged in a row and $$$99$$$ doors between them; the $$$i$$$-th door connects rooms $$$i$$$ and $$$i+1$$$. Each door can be either locked or unlocked. Initially, all doors are unlocked.</p><p>We say that room $$$x$$$ is reachable from room $$$y$$$ if all doors between them are unlocked.</p><p>You know that: </p><ul> <li> Alice is in some room from the segment $$$[l, r]$$$; </li><li> Bob is in some room from the segment $$$[L, R]$$$; </li><li> Alice and Bob are in different rooms. </li></ul><p>However, you don't know the exact rooms they are in.</p><p>You don't want Alice and Bob to be able to reach each other, so you are going to lock some doors to prevent that. What's the smallest number of doors you have to lock so that Alice and Bob cannot meet, regardless of their starting positions inside the given segments?</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains a single integer $$$t$$$ ($$$1 \le t \le 10^4$$$) — the number of test cases.</p><p>The first line of each test case contains two integers $$$l$$$ and $$$r$$$ ($$$1 \le l  \lt  r \le 100$$$) — the bounds of the segment of rooms where Alice is located.</p><p>The second line of each test case contains two integers $$$L$$$ and $$$R$$$ ($$$1 \le L  \lt  R \le 100$$$) — the bounds of the segment of rooms where Bob is located.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, print a single integer — the smallest number of doors you have to lock so that Alice and Bob cannot meet, regardless of their starting positions inside the given segments.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id005692176870559247" id="id009120590237005903" class="input-output-copier">Copy</div></div><pre id="id005692176870559247"><div class="test-example-line test-example-line-even test-example-line-0">4</div><div class="test-example-line test-example-line-odd test-example-line-1">1 2</div><div class="test-example-line test-example-line-odd test-example-line-1">3 4</div><div class="test-example-line test-example-line-even test-example-line-2">2 5</div><div class="test-example-line test-example-line-even test-example-line-2">2 5</div><div class="test-example-line test-example-line-odd test-example-line-3">3 7</div><div class="test-example-line test-example-line-odd test-example-line-3">6 7</div><div class="test-example-line test-example-line-even test-example-line-4">4 5</div><div class="test-example-line test-example-line-even test-example-line-4">2 8</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id008624601918457611" id="id006038020361488723" class="input-output-copier">Copy</div></div><pre id="id008624601918457611">1
+3
+2
+3
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first test case, it is sufficient to lock the door between rooms $$$2$$$ and $$$3$$$.</p><p>In the second test case, the following doors have to be locked: $$$(2,3)$$$, $$$(3,4)$$$, $$$(4,5)$$$.</p><p>In the third test case, the following doors have to be locked: $$$(5, 6)$$$ and $$$(6,7)$$$.</p></div>
