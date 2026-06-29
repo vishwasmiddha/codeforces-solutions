@@ -6,44 +6,44 @@
 
 | Total Problems | Topics |
 |---|---|
-| 357 | 32 |
+| 372 | 32 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
 - [*special](#special) (5)
-- [Uncategorized](#uncategorized) (7)
-- [binary search](#binary-search) (27)
+- [Uncategorized](#uncategorized) (9)
+- [binary search](#binary-search) (29)
 - [bitmasks](#bitmasks) (20)
-- [brute force](#brute-force) (70)
-- [combinatorics](#combinatorics) (7)
+- [brute force](#brute-force) (73)
+- [combinatorics](#combinatorics) (9)
 - [communication](#communication) (3)
-- [constructive algorithms](#constructive-algorithms) (69)
-- [data structures](#data-structures) (20)
+- [constructive algorithms](#constructive-algorithms) (71)
+- [data structures](#data-structures) (21)
 - [dfs and similar](#dfs-and-similar) (12)
-- [dp](#dp) (39)
+- [dp](#dp) (43)
 - [dsu](#dsu) (3)
-- [games](#games) (12)
+- [games](#games) (14)
 - [geometry](#geometry) (9)
 - [graph matchings](#graph-matchings) (4)
 - [graphs](#graphs) (19)
-- [greedy](#greedy) (157)
+- [greedy](#greedy) (164)
 - [hashing](#hashing) (3)
-- [implementation](#implementation) (130)
+- [implementation](#implementation) (131)
 - [interactive](#interactive) (5)
-- [math](#math) (132)
+- [math](#math) (137)
 - [matrices](#matrices) (1)
 - [number theory](#number-theory) (30)
 - [probabilities](#probabilities) (1)
 - [schedules](#schedules) (1)
 - [shortest paths](#shortest-paths) (5)
-- [sortings](#sortings) (49)
+- [sortings](#sortings) (50)
 - [string suffix structures](#string-suffix-structures) (1)
-- [strings](#strings) (40)
+- [strings](#strings) (42)
 - [ternary search](#ternary-search) (2)
 - [trees](#trees) (9)
-- [two pointers](#two-pointers) (19)
+- [two pointers](#two-pointers) (22)
 
 ---
 
@@ -67,6 +67,8 @@
 | 2151B | [Incremental Path](https://codeforces.com/contest/2151/problem/B) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2151/B%20-%20Incremental%20Path/solution.cpp) |
 | 2151D | [Grid Counting](https://codeforces.com/contest/2151/problem/D) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2151/D%20-%20Grid%20Counting/solution.cpp) |
 | 2160D | [MAD Interactive Problem](https://codeforces.com/contest/2160/problem/D) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2160/D%20-%20MAD%20Interactive%20Problem/solution.cpp) |
+| 2166C | [Cyclic Merging](https://codeforces.com/contest/2166/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2166/C%20-%20Cyclic%20Merging/solution.cpp) |
+| 2175C | [Needle in a Haystack](https://codeforces.com/contest/2175/problem/C) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2175/C%20-%20Needle%20in%20a%20Haystack/solution.cpp) |
 | 2240F | [Hunting the Beast](https://codeforces.com/contest/2240/problem/F) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2240/F%20-%20Hunting%20the%20Beast/solution.cpp) |
 
 ### binary search
@@ -100,6 +102,8 @@
 | 2145C | [Monocarp's String](https://codeforces.com/contest/2145/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2145/C%20-%20Monocarp's%20String/solution.cpp) |
 | 2162D | [Beautiful Permutation](https://codeforces.com/contest/2162/problem/D) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2162/D%20-%20Beautiful%20Permutation/solution.cpp) |
 | 2171F | [Rae Taylor and Trees (hard version)](https://codeforces.com/contest/2171/problem/F) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2171/F%20-%20Rae%20Taylor%20and%20Trees%20(hard%20version)/solution.cpp) |
+| 2182E | [New Year's Gifts](https://codeforces.com/contest/2182/problem/E) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/E%20-%20New%20Year's%20Gifts/solution.cpp) |
+| 2183C | [War Strategy](https://codeforces.com/contest/2183/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2183/C%20-%20War%20Strategy/solution.cpp) |
 
 ### bitmasks
 
@@ -187,6 +191,7 @@
 | 2126A | [Only One Digit](https://codeforces.com/contest/2126/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2126/A%20-%20Only%20One%20Digit/solution.cpp) |
 | 2131E | [Adjacent XOR](https://codeforces.com/contest/2131/problem/E) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2131/E%20-%20Adjacent%20XOR/solution.cpp) |
 | 2132A | [Homework](https://codeforces.com/contest/2132/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2132/A%20-%20Homework/solution.cpp) |
+| 2143A | [All Lengths Subtraction](https://codeforces.com/contest/2143/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2143/A%20-%20All%20Lengths%20Subtraction/solution.cpp) |
 | 2144A | [Cut the Array](https://codeforces.com/contest/2144/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2144/A%20-%20Cut%20the%20Array/solution.cpp) |
 | 2146A | [Equal Occurrences](https://codeforces.com/contest/2146/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2146/A%20-%20Equal%20Occurrences/solution.cpp) |
 | 2148A | [Sublime Sequence](https://codeforces.com/contest/2148/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2148/A%20-%20Sublime%20Sequence/solution.cpp) |
@@ -196,10 +201,12 @@
 | 2162A | [Beautiful Average](https://codeforces.com/contest/2162/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2162/A%20-%20Beautiful%20Average/solution.cpp) |
 | 2162B | [Beautiful String](https://codeforces.com/contest/2162/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2162/B%20-%20Beautiful%20String/solution.cpp) |
 | 2163A | [Souvlaki VS. Kalamaki](https://codeforces.com/contest/2163/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2163/A%20-%20Souvlaki%20VS.%20Kalamaki/solution.cpp) |
+| 2166A | [Same Difference](https://codeforces.com/contest/2166/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2166/A%20-%20Same%20Difference/solution.cpp) |
 | 2167D | [Yet Another Array Problem](https://codeforces.com/contest/2167/problem/D) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/D%20-%20Yet%20Another%20Array%20Problem/solution.cpp) |
 | 2173C | [Kanade's Perfect Multiples](https://codeforces.com/contest/2173/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2173/C%20-%20Kanade's%20Perfect%20Multiples/solution.cpp) |
 | 2180A | [Carnival Wheel](https://codeforces.com/contest/2180/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2180/A%20-%20Carnival%20Wheel/solution.cpp) |
 | 2182B | [New Year Cake](https://codeforces.com/contest/2182/problem/B) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/B%20-%20New%20Year%20Cake/solution.cpp) |
+| 2182C | [Production of Snowmen](https://codeforces.com/contest/2182/problem/C) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/C%20-%20Production%20of%20Snowmen/solution.cpp) |
 
 ### combinatorics
 
@@ -212,6 +219,8 @@
 | 2108A | [Permutation Warm-Up](https://codeforces.com/contest/2108/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2108/A%20-%20Permutation%20Warm-Up/solution.cpp) |
 | 2125C | [Count Good Numbers](https://codeforces.com/contest/2125/problem/C) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2125/C%20-%20Count%20Good%20Numbers/solution.cpp) |
 | 2127D | [Root was Built by Love, Broken by Destiny](https://codeforces.com/contest/2127/problem/D) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2127/D%20-%20Root%20was%20Built%20by%20Love%2C%20Broken%20by%20Destiny/solution.cpp) |
+| 2182C | [Production of Snowmen](https://codeforces.com/contest/2182/problem/C) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/C%20-%20Production%20of%20Snowmen/solution.cpp) |
+| 2182D | [Christmas Tree Decoration](https://codeforces.com/contest/2182/problem/D) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/D%20-%20Christmas%20Tree%20Decoration/solution.cpp) |
 
 ### communication
 
@@ -281,6 +290,7 @@
 | 2155D | [Batteries](https://codeforces.com/contest/2155/problem/D) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2155/D%20-%20Batteries/solution.cpp) |
 | 2156A | [Pizza Time](https://codeforces.com/contest/2156/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2156/A%20-%20Pizza%20Time/solution.cpp) |
 | 2158A | [Suspension](https://codeforces.com/contest/2158/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/A%20-%20Suspension/solution.cpp) |
+| 2158B | [Split](https://codeforces.com/contest/2158/problem/B) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/B%20-%20Split/solution.cpp) |
 | 2161C | [Loyalty](https://codeforces.com/contest/2161/problem/C) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2161/C%20-%20Loyalty/solution.cpp) |
 | 2162B | [Beautiful String](https://codeforces.com/contest/2162/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2162/B%20-%20Beautiful%20String/solution.cpp) |
 | 2162C | [Beautiful XOR](https://codeforces.com/contest/2162/problem/C) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2162/C%20-%20Beautiful%20XOR/solution.cpp) |
@@ -294,6 +304,7 @@
 | 2179F | [Blackslex and Another RGB Walking](https://codeforces.com/contest/2179/problem/F) | 2000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2179/F%20-%20Blackslex%20and%20Another%20RGB%20Walking/solution.cpp) |
 | 2180C | [XOR-factorization](https://codeforces.com/contest/2180/problem/C) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2180/C%20-%20XOR-factorization/solution.cpp) |
 | 2182A | [New Year String](https://codeforces.com/contest/2182/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/A%20-%20New%20Year%20String/solution.cpp) |
+| 2183B | [Yet Another MEX Problem](https://codeforces.com/contest/2183/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2183/B%20-%20Yet%20Another%20MEX%20Problem/solution.cpp) |
 
 ### data structures
 
@@ -319,6 +330,7 @@
 | 2140D | [A Cruel Segment's Thesis](https://codeforces.com/contest/2140/problem/D) | 2000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2140/D%20-%20A%20Cruel%20Segment's%20Thesis/solution.cpp) |
 | 2167G | [Mukhammadali and the Smooth Array](https://codeforces.com/contest/2167/problem/G) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/G%20-%20Mukhammadali%20and%20the%20Smooth%20Array/solution.cpp) |
 | 2171F | [Rae Taylor and Trees (hard version)](https://codeforces.com/contest/2171/problem/F) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2171/F%20-%20Rae%20Taylor%20and%20Trees%20(hard%20version)/solution.cpp) |
+| 2182E | [New Year's Gifts](https://codeforces.com/contest/2182/problem/E) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/E%20-%20New%20Year's%20Gifts/solution.cpp) |
 
 ### dfs and similar
 
@@ -373,6 +385,7 @@
 | 2126B | [No Casino in the Mountains](https://codeforces.com/contest/2126/problem/B) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2126/B%20-%20No%20Casino%20in%20the%20Mountains/solution.cpp) |
 | 2147C | [Rabbits](https://codeforces.com/contest/2147/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2147/C%20-%20Rabbits/solution.cpp) |
 | 2153D | [Not Alone](https://codeforces.com/contest/2153/problem/D) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2153/D%20-%20Not%20Alone/solution.cpp) |
+| 2158C | [Annoying Game](https://codeforces.com/contest/2158/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/C%20-%20Annoying%20Game/solution.cpp) |
 | 2167G | [Mukhammadali and the Smooth Array](https://codeforces.com/contest/2167/problem/G) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/G%20-%20Mukhammadali%20and%20the%20Smooth%20Array/solution.cpp) |
 | 2171F | [Rae Taylor and Trees (hard version)](https://codeforces.com/contest/2171/problem/F) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2171/F%20-%20Rae%20Taylor%20and%20Trees%20(hard%20version)/solution.cpp) |
 | 2173B | [Niko's Tactical Cards](https://codeforces.com/contest/2173/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2173/B%20-%20Niko's%20Tactical%20Cards/solution.cpp) |
@@ -380,6 +393,9 @@
 | 2178C | [First or Second](https://codeforces.com/contest/2178/problem/C) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2178/C%20-%20First%20or%20Second/solution.cpp) |
 | 2179B | [Blackslex and Showering](https://codeforces.com/contest/2179/problem/B) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2179/B%20-%20Blackslex%20and%20Showering/solution.cpp) |
 | 2180C | [XOR-factorization](https://codeforces.com/contest/2180/problem/C) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2180/C%20-%20XOR-factorization/solution.cpp) |
+| 2181M | [Medical Parity](https://codeforces.com/contest/2181/problem/M) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2181/M%20-%20Medical%20Parity/solution.cpp) |
+| 2182C | [Production of Snowmen](https://codeforces.com/contest/2182/problem/C) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/C%20-%20Production%20of%20Snowmen/solution.cpp) |
+| 2182D | [Christmas Tree Decoration](https://codeforces.com/contest/2182/problem/D) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/D%20-%20Christmas%20Tree%20Decoration/solution.cpp) |
 
 ### dsu
 
@@ -404,7 +420,9 @@
 | 2127B | [Hamiiid, Haaamid... Hamid?](https://codeforces.com/contest/2127/problem/B) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2127/B%20-%20Hamiiid%2C%20Haaamid...%20Hamid%3F/solution.cpp) |
 | 2127C | [Trip Shopping](https://codeforces.com/contest/2127/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2127/C%20-%20Trip%20Shopping/solution.cpp) |
 | 2140C | [Ultimate Value](https://codeforces.com/contest/2140/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2140/C%20-%20Ultimate%20Value/solution.cpp) |
+| 2158C | [Annoying Game](https://codeforces.com/contest/2158/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/C%20-%20Annoying%20Game/solution.cpp) |
 | 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2161/A%20-%20Round%20Trip/solution.cpp) |
+| 2183A | [Binary Array Game](https://codeforces.com/contest/2183/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2183/A%20-%20Binary%20Array%20Game/solution.cpp) |
 
 ### geometry
 
@@ -588,6 +606,8 @@
 | 2154B | [Make it Zigzag](https://codeforces.com/contest/2154/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2154/B%20-%20Make%20it%20Zigzag/solution.cpp) |
 | 2156A | [Pizza Time](https://codeforces.com/contest/2156/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2156/A%20-%20Pizza%20Time/solution.cpp) |
 | 2158A | [Suspension](https://codeforces.com/contest/2158/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/A%20-%20Suspension/solution.cpp) |
+| 2158B | [Split](https://codeforces.com/contest/2158/problem/B) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/B%20-%20Split/solution.cpp) |
+| 2158C | [Annoying Game](https://codeforces.com/contest/2158/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/C%20-%20Annoying%20Game/solution.cpp) |
 | 2160B | [Distinct Elements](https://codeforces.com/contest/2160/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2160/B%20-%20Distinct%20Elements/solution.cpp) |
 | 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2161/A%20-%20Round%20Trip/solution.cpp) |
 | 2161C | [Loyalty](https://codeforces.com/contest/2161/problem/C) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2161/C%20-%20Loyalty/solution.cpp) |
@@ -595,6 +615,7 @@
 | 2162C | [Beautiful XOR](https://codeforces.com/contest/2162/problem/C) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2162/C%20-%20Beautiful%20XOR/solution.cpp) |
 | 2163A | [Souvlaki VS. Kalamaki](https://codeforces.com/contest/2163/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2163/A%20-%20Souvlaki%20VS.%20Kalamaki/solution.cpp) |
 | 2163B | [Siga ta Kymata](https://codeforces.com/contest/2163/problem/B) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2163/B%20-%20Siga%20ta%20Kymata/solution.cpp) |
+| 2166A | [Same Difference](https://codeforces.com/contest/2166/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2166/A%20-%20Same%20Difference/solution.cpp) |
 | 2167C | [Isamatdin and His Magic Wand!](https://codeforces.com/contest/2167/problem/C) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/C%20-%20Isamatdin%20and%20His%20Magic%20Wand!/solution.cpp) |
 | 2171F | [Rae Taylor and Trees (hard version)](https://codeforces.com/contest/2171/problem/F) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2171/F%20-%20Rae%20Taylor%20and%20Trees%20(hard%20version)/solution.cpp) |
 | 2172F | [Cluster Computing System](https://codeforces.com/contest/2172/problem/F) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2172/F%20-%20Cluster%20Computing%20System/solution.cpp) |
@@ -613,6 +634,10 @@
 | 2180B | [Ashmal](https://codeforces.com/contest/2180/problem/B) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2180/B%20-%20Ashmal/solution.cpp) |
 | 2180C | [XOR-factorization](https://codeforces.com/contest/2180/problem/C) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2180/C%20-%20XOR-factorization/solution.cpp) |
 | 2182A | [New Year String](https://codeforces.com/contest/2182/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/A%20-%20New%20Year%20String/solution.cpp) |
+| 2182D | [Christmas Tree Decoration](https://codeforces.com/contest/2182/problem/D) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/D%20-%20Christmas%20Tree%20Decoration/solution.cpp) |
+| 2182E | [New Year's Gifts](https://codeforces.com/contest/2182/problem/E) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/E%20-%20New%20Year's%20Gifts/solution.cpp) |
+| 2183B | [Yet Another MEX Problem](https://codeforces.com/contest/2183/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2183/B%20-%20Yet%20Another%20MEX%20Problem/solution.cpp) |
+| 2183C | [War Strategy](https://codeforces.com/contest/2183/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2183/C%20-%20War%20Strategy/solution.cpp) |
 | 2238A | [Another Puzzle from Papyrus](https://codeforces.com/contest/2238/problem/A) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2238/A%20-%20Another%20Puzzle%20from%20Papyrus/solution.cpp) |
 
 ### hashing
@@ -703,6 +728,7 @@
 | 1918B | [Minimize Inversions](https://codeforces.com/contest/1918/problem/B) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1918/B%20-%20Minimize%20Inversions/solution.cpp) |
 | 1948B | [Array Fix](https://codeforces.com/contest/1948/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1948/B%20-%20Array%20Fix/solution.cpp) |
 | 1979A | [Guess the Maximum](https://codeforces.com/contest/1979/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1979/A%20-%20Guess%20the%20Maximum/solution.cpp) |
+| 1999A | [A+B Again?](https://codeforces.com/contest/1999/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1999/A%20-%20A%2BB%20Again%3F/solution.cpp) |
 | 2009B | [osu!mania](https://codeforces.com/contest/2009/problem/B) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2009/B%20-%20osu!mania/solution.py) |
 | 2009C | [The Legend of Freya the Frog](https://codeforces.com/contest/2009/problem/C) | 1100 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2009/C%20-%20The%20Legend%20of%20Freya%20the%20Frog/solution.py) |
 | 2010A | [Alternating Sum of Numbers](https://codeforces.com/contest/2010/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2010/A%20-%20Alternating%20Sum%20of%20Numbers/solution.py) |
@@ -812,6 +838,7 @@
 | 1916B | [Two Divisors](https://codeforces.com/contest/1916/problem/B) | 1000 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1916/B%20-%20Two%20Divisors/solution.cpp) |
 | 1955F | [Unfair Game](https://codeforces.com/contest/1955/problem/F) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1955/F%20-%20Unfair%20Game/solution.cpp) |
 | 1968A | [Maximize?](https://codeforces.com/contest/1968/problem/A) | 800 | [PyPy 3-64](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1968/A%20-%20Maximize%3F/solution.txt) |
+| 1999A | [A+B Again?](https://codeforces.com/contest/1999/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1999/A%20-%20A%2BB%20Again%3F/solution.cpp) |
 | 2009A | [Minimize!](https://codeforces.com/contest/2009/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2009/A%20-%20Minimize!/solution.py) |
 | 2009C | [The Legend of Freya the Frog](https://codeforces.com/contest/2009/problem/C) | 1100 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2009/C%20-%20The%20Legend%20of%20Freya%20the%20Frog/solution.py) |
 | 2010A | [Alternating Sum of Numbers](https://codeforces.com/contest/2010/problem/A) | 800 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2010/A%20-%20Alternating%20Sum%20of%20Numbers/solution.py) |
@@ -888,11 +915,13 @@
 | 2151C | [Incremental Stay](https://codeforces.com/contest/2151/problem/C) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2151/C%20-%20Incremental%20Stay/solution.cpp) |
 | 2155D | [Batteries](https://codeforces.com/contest/2155/problem/D) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2155/D%20-%20Batteries/solution.cpp) |
 | 2158A | [Suspension](https://codeforces.com/contest/2158/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/A%20-%20Suspension/solution.cpp) |
+| 2158B | [Split](https://codeforces.com/contest/2158/problem/B) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2158/B%20-%20Split/solution.cpp) |
 | 2160A | [MEX Partition](https://codeforces.com/contest/2160/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2160/A%20-%20MEX%20Partition/solution.cpp) |
 | 2160B | [Distinct Elements](https://codeforces.com/contest/2160/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2160/B%20-%20Distinct%20Elements/solution.cpp) |
 | 2161A | [Round Trip](https://codeforces.com/contest/2161/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2161/A%20-%20Round%20Trip/solution.cpp) |
 | 2163A | [Souvlaki VS. Kalamaki](https://codeforces.com/contest/2163/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2163/A%20-%20Souvlaki%20VS.%20Kalamaki/solution.cpp) |
 | 2163B | [Siga ta Kymata](https://codeforces.com/contest/2163/problem/B) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2163/B%20-%20Siga%20ta%20Kymata/solution.cpp) |
+| 2166B | [Tab Closing](https://codeforces.com/contest/2166/problem/B) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2166/B%20-%20Tab%20Closing/solution.cpp) |
 | 2167A | [Square?](https://codeforces.com/contest/2167/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/A%20-%20Square%3F/solution.cpp) |
 | 2167D | [Yet Another Array Problem](https://codeforces.com/contest/2167/problem/D) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/D%20-%20Yet%20Another%20Array%20Problem/solution.cpp) |
 | 2168A2 | [Encode and Decode (Hard Version)](https://codeforces.com/contest/2168/problem/A2) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2168/A2%20-%20Encode%20and%20Decode%20(Hard%20Version)/solution.cpp) |
@@ -903,6 +932,8 @@
 | 2179A | [Blackslex and Password](https://codeforces.com/contest/2179/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2179/A%20-%20Blackslex%20and%20Password/solution.cpp) |
 | 2179C | [Blackslex and Number Theory](https://codeforces.com/contest/2179/problem/C) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2179/C%20-%20Blackslex%20and%20Number%20Theory/solution.cpp) |
 | 2179D | [Blackslex and Penguin Civilization](https://codeforces.com/contest/2179/problem/D) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2179/D%20-%20Blackslex%20and%20Penguin%20Civilization/solution.cpp) |
+| 2182D | [Christmas Tree Decoration](https://codeforces.com/contest/2182/problem/D) | 1600 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/D%20-%20Christmas%20Tree%20Decoration/solution.cpp) |
+| 2183C | [War Strategy](https://codeforces.com/contest/2183/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2183/C%20-%20War%20Strategy/solution.cpp) |
 | 2238A | [Another Puzzle from Papyrus](https://codeforces.com/contest/2238/problem/A) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2238/A%20-%20Another%20Puzzle%20from%20Papyrus/solution.cpp) |
 
 ### matrices
@@ -1020,6 +1051,7 @@
 | 2167C | [Isamatdin and His Magic Wand!](https://codeforces.com/contest/2167/problem/C) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/C%20-%20Isamatdin%20and%20His%20Magic%20Wand!/solution.cpp) |
 | 2176C | [Odd Process](https://codeforces.com/contest/2176/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2176/C%20-%20Odd%20Process/solution.cpp) |
 | 2179C | [Blackslex and Number Theory](https://codeforces.com/contest/2179/problem/C) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2179/C%20-%20Blackslex%20and%20Number%20Theory/solution.cpp) |
+| 2182E | [New Year's Gifts](https://codeforces.com/contest/2182/problem/E) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/E%20-%20New%20Year's%20Gifts/solution.cpp) |
 | 2238A | [Another Puzzle from Papyrus](https://codeforces.com/contest/2238/problem/A) | Unrated | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2238/A%20-%20Another%20Puzzle%20from%20Papyrus/solution.cpp) |
 
 ### string suffix structures
@@ -1065,12 +1097,14 @@
 | 2145C | [Monocarp's String](https://codeforces.com/contest/2145/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2145/C%20-%20Monocarp's%20String/solution.cpp) |
 | 2149D | [A and B](https://codeforces.com/contest/2149/problem/D) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2149/D%20-%20A%20and%20B/solution.cpp) |
 | 2151A | [Incremental Subarray](https://codeforces.com/contest/2151/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2151/A%20-%20Incremental%20Subarray/solution.cpp) |
+| 2166A | [Same Difference](https://codeforces.com/contest/2166/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2166/A%20-%20Same%20Difference/solution.cpp) |
 | 2167B | [Your Name](https://codeforces.com/contest/2167/problem/B) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2167/B%20-%20Your%20Name/solution.cpp) |
 | 2176B | [Optimal Shifts](https://codeforces.com/contest/2176/problem/B) | 1000 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2176/B%20-%20Optimal%20Shifts/solution.cpp) |
 | 2178A | [Yes or Yes](https://codeforces.com/contest/2178/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2178/A%20-%20Yes%20or%20Yes/solution.cpp) |
 | 2178B | [Impost or Sus](https://codeforces.com/contest/2178/problem/B) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2178/B%20-%20Impost%20or%20Sus/solution.cpp) |
 | 2179A | [Blackslex and Password](https://codeforces.com/contest/2179/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2179/A%20-%20Blackslex%20and%20Password/solution.cpp) |
 | 2180B | [Ashmal](https://codeforces.com/contest/2180/problem/B) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2180/B%20-%20Ashmal/solution.cpp) |
+| 2181M | [Medical Parity](https://codeforces.com/contest/2181/problem/M) | 1700 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2181/M%20-%20Medical%20Parity/solution.cpp) |
 | 2182A | [New Year String](https://codeforces.com/contest/2182/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/A%20-%20New%20Year%20String/solution.cpp) |
 
 ### ternary search
@@ -1114,9 +1148,12 @@
 | 2123E | [MEX Count](https://codeforces.com/contest/2123/problem/E) | 1400 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2123/E%20-%20MEX%20Count/solution.cpp) |
 | 2128B | [Deque Process](https://codeforces.com/contest/2128/problem/B) | 1100 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2128/B%20-%20Deque%20Process/solution.cpp) |
 | 2136B | [Like the Bitset](https://codeforces.com/contest/2136/problem/B) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2136/B%20-%20Like%20the%20Bitset/solution.cpp) |
+| 2143A | [All Lengths Subtraction](https://codeforces.com/contest/2143/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2143/A%20-%20All%20Lengths%20Subtraction/solution.cpp) |
 | 2154A | [Notelock](https://codeforces.com/contest/2154/problem/A) | 800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2154/A%20-%20Notelock/solution.cpp) |
 | 2154D | [Catshock](https://codeforces.com/contest/2154/problem/D) | 1900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2154/D%20-%20Catshock/solution.cpp) |
 | 2161C | [Loyalty](https://codeforces.com/contest/2161/problem/C) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2161/C%20-%20Loyalty/solution.cpp) |
+| 2182E | [New Year's Gifts](https://codeforces.com/contest/2182/problem/E) | 1800 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2182/E%20-%20New%20Year's%20Gifts/solution.cpp) |
+| 2183C | [War Strategy](https://codeforces.com/contest/2183/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/2183/C%20-%20War%20Strategy/solution.cpp) |
 
 ---
 
