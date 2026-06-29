@@ -1,0 +1,50 @@
+n = int(input())
+l = list(map(int,input().split()))
+l = [min(l)-1]+l+[max(l)+1]
+flag = True
+flip = 0
+front = -1
+last = -1
+answer = True
+for i in range(n+1):
+	if flag:
+		if l[i]<=l[i+1]:
+			continue
+		elif flip<2:
+			flag = False
+			flip+=1
+			front = i
+			#continue
+		else:
+			answer = False
+			break
+	else:
+		if l[i]>=l[i+1]:
+			continue
+		else:
+			flag = True
+			flip+=1
+			last = i
+ 
+if answer:
+	if flip==0:
+		print("yes")
+		print(1,1)
+	elif flip==1:
+		last = n-1
+		if l[front-1]<=l[last]:
+			print("yes")
+			print(front,last)
+		else:
+			print("no")
+	elif flip==2:
+		if l[front-1]<=l[last] and l[front]<=l[last+1]:
+			print("yes")
+			print(front,last)
+		else:
+			print("no")
+	else:
+		print("no")
+else:
+	print("no")
+#print(flip,front,last)
