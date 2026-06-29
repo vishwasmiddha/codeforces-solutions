@@ -1,0 +1,22 @@
+<h2><a href="https://codeforces.com/contest/1955/problem/F" target="_blank" rel="noopener noreferrer">1955F — Unfair Game</a></h2>
+
+| | |
+|---|---|
+| **Difficulty** | 1800 |
+| **Language** | C++23 (GCC 14-64, msys2) |
+| **Verdict** | ✅ Accepted |
+| **Problem Link** | [Codeforces 1955F](https://codeforces.com/contest/1955/problem/F) |
+
+## Topics
+`dp` `games` `greedy` `math` `schedules`
+
+---
+
+## Problem Statement
+
+<div class="header"><div class="title">F. Unfair Game</div><div class="time-limit"><div class="property-title">time limit per test</div>2 seconds</div><div class="memory-limit"><div class="property-title">memory limit per test</div>256 megabytes</div><div class="input-file input-standard"><div class="property-title">input</div>standard input</div><div class="output-file output-standard"><div class="property-title">output</div>standard output</div></div><div><p>Alice and Bob gathered in the evening to play an exciting game on a sequence of $$$n$$$ integers, each integer of the sequence <span class="tex-font-style-bf">doesn't exceed $$$4$$$</span>. The rules of the game are too complex to describe, so let's just describe the winning condition — Alice wins if the <a href="http://tiny.cc/xor_wiki_eng">bitwise XOR</a> of all the numbers in the sequence is non-zero; otherwise, Bob wins.</p><p>The guys invited Eve to act as a judge. Initially, Alice and Bob play with $$$n$$$ numbers. After one game, Eve removes one of the numbers from the sequence, then Alice and Bob play with $$$n-1$$$ numbers. Eve removes one number again, after which Alice and Bob play with $$$n - 2$$$ numbers. This continues until the sequence of numbers is empty.</p><p>Eve seems to think that in such a game, Alice almost always wins, so she wants Bob to win as many times as possible. Determine the maximum number of times Bob can win against Alice if Eve removes the numbers optimally.</p></div><div class="input-specification"><div class="section-title">Input</div><p>The first line contains an integer $$$t$$$ ($$$1 \le t \le 10^4$$$) — the number of test cases.</p><p>The first and only line of each test case contains four integers $$$p_i$$$ ($$$0 \le p_i \le 200$$$) — the number of ones, twos, threes, and fours in the sequence at the beginning of the game.</p></div><div class="output-specification"><div class="section-title">Output</div><p>For each test case, print the maximum number of times Bob will win in a separate line, if Eve removes the numbers optimally.</p></div><div class="sample-tests"><div class="section-title">Example</div><div class="sample-test"><div class="input"><div class="title">Input<div title="Copy" data-clipboard-target="#id004394978820827381" id="id00008268480413626378" class="input-output-copier">Copy</div></div><pre id="id004394978820827381"><div class="test-example-line test-example-line-even test-example-line-0">5</div><div class="test-example-line test-example-line-odd test-example-line-1">1 1 1 0</div><div class="test-example-line test-example-line-even test-example-line-2">1 0 1 2</div><div class="test-example-line test-example-line-odd test-example-line-3">2 2 2 0</div><div class="test-example-line test-example-line-even test-example-line-4">3 3 2 0</div><div class="test-example-line test-example-line-odd test-example-line-5">0 9 9 9</div></pre></div><div class="output"><div class="title">Output<div title="Copy" data-clipboard-target="#id0002226979094772119" id="id001725297908075215" class="input-output-copier">Copy</div></div><pre id="id0002226979094772119">1
+1
+3
+3
+12
+</pre></div></div></div><div class="note"><div class="section-title">Note</div><p>In the first example, Bob wins when Eve has not removed any numbers yet.</p><p>In the second example, Bob wins if Eve removes one one and one three.</p></div>
