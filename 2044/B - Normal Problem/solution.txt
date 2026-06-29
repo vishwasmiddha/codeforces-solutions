@@ -1,0 +1,12 @@
+for i in range(int(input())):
+    st = input()
+    st = st[::-1]
+    l = ""
+    for c in st:
+        if c=="p":
+            l+="q"
+        elif c=="q":
+            l+="p"
+        else:
+            l+="w"
+    print(l)
