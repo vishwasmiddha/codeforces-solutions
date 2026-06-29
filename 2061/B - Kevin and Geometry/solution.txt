@@ -1,0 +1,26 @@
+for some in range(int(input())):
+    n = int(input())
+    l = list(map(int,input().split()))
+    l.sort()
+    if n<=3:
+        print(-1)
+    else:
+        duba = 0
+        for i in range(len(l)-1,0,-1):
+            if l[i]==l[i-1]:
+                duba = l[i]
+                l.pop(i-1)
+                l.pop(i-1)
+                break
+        if duba==0:
+            print(-1)
+        else:
+            notfound = True
+            for i in range(0,len(l)-1,1):
+                if l[i+1]-l[i]<2*duba:
+                    print(duba,duba,l[i],l[i+1])
+                    #print("check",l[i+1]-l[i],duba)
+                    notfound = False
+                    break
+            if notfound:
+                print(-1)
