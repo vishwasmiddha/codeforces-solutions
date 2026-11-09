@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 460 | 32 |
+| 461 | 32 |
 
 ---
 
@@ -32,7 +32,7 @@
 - [hashing](#hashing) (4)
 - [implementation](#implementation) (147)
 - [interactive](#interactive) (8)
-- [math](#math) (167)
+- [math](#math) (168)
 - [matrices](#matrices) (2)
 - [number theory](#number-theory) (38)
 - [probabilities](#probabilities) (2)
@@ -996,6 +996,7 @@
 | 1270B | [Interesting Subarray](https://codeforces.com/contest/1270/problem/B) | 1200 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1270/B%20-%20Interesting%20Subarray/solution.cpp) |
 | 1294C | [Product of Three Numbers](https://codeforces.com/contest/1294/problem/C) | 1300 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1294/C%20-%20Product%20of%20Three%20Numbers/solution.cpp) |
 | 1328A | [Divisibility Problem](https://codeforces.com/contest/1328/problem/A) | 800 | [C++17 (GCC 7-32)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1328/A%20-%20Divisibility%20Problem/solution.cpp) |
+| 1350A | [Orac and Factors](https://codeforces.com/contest/1350/problem/A) | 900 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1350/A%20-%20Orac%20and%20Factors/solution.cpp) |
 | 1352C | [K-th Not Divisible by n](https://codeforces.com/contest/1352/problem/C) | 1200 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1352/C%20-%20K-th%20Not%20Divisible%20by%20n/solution.py) |
 | 1366C | [Palindromic Paths](https://codeforces.com/contest/1366/problem/C) | 1500 | [C++23 (GCC 14-64, msys2)](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1366/C%20-%20Palindromic%20Paths/solution.cpp) |
 | 1542B | [Plus and Multiply](https://codeforces.com/contest/1542/problem/B) | 1500 | [Python 3](https://github.com/vishwasmiddha/codeforces-solutions/blob/HEAD/1542/B%20-%20Plus%20and%20Multiply/solution.py) |
